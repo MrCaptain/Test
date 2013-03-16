@@ -1,0 +1,41 @@
+
+======================================================战斗公共接口说明==================================================
+
+总则：用lib_battle:iniBattleRecord(BattleData, Frmt, BChgHp（0-满血战斗，1-保留原有血量战斗）)初始化battleRecord战斗记录；
+      用pp_battle:battle_handing(PlayerBR, MonBR, Direct（先攻方）)实施战斗逻辑及战斗数据封包
+
+1）初始化iniBattleRecord传入参数(BattleData，Frmt)：
+      方式一、手动初始化：
+              1、 lib_battle:iniBattleData({custom, RoleList, Giant, Frmt, FrmtEquip, Saddle})
+                  RoleList单方参战角色列表数据格式：[{角色类型（1-人物，2-宠物，3-怪物）,角色记录（对应的人物、宠物、怪物记录）,角色技能ID（人物才需要加上，其他角色类型附0占位）},..],
+                  Giant巨兽记录：没有则为[]
+                  FrmtEquip：法器数据记录，如果不需要显示在战斗画面可以附[]，需要则读进程字典获取;
+                  Saddle：龙鞍数据记录，如果不需要显示在战斗画面可以附[]，需要则读进程字典获取;
+                  返回battleData记录；
+              2、 根据需要自己创建阵法记录Frmt, 必须设定posl字段，其余根据需要设定;
+              3、 如果需要修改当场战斗的属性则自己定义方法修改battleData记录，如卡片系统。
+
+     方式二、自动初始化：
+              1、当前人物{BattleData, Frmt} =  lib_battle:getPlayerBattleData(Player)；
+              2、怪物群组{MonBattleData, Goods, MonFrmt} = lib_battle:getMonBattleData(MonGId)。
+              
+2）生成左右双方的battleRecord：
+    RoleBattleRecord = lib_battle:iniBattleRecord(BattleData, Frmt, BChgHp)。
+     
+
+3）实施战斗逻辑及战斗数据封包：
+   {MM, WarBin, WarBinOnlyBattle, NewLeft_BattleRecord, NewRight_BattleRecord, NewMyBattleScore} = 
+                                       pp_battle:battle_handing(LeftBattleRecord, RightBattleRecord, Direct),
+   返回描述：
+          MM：           战斗结果（1-左方胜利，2-左方失败）；
+          WarBin：       200001协议封包数据
+          WarBinOnlyBattle:     去掉冗余数据的通用战斗数据包（见战斗协议附录：1）
+          NewLeft_BattleRecord：战斗结束后的左方battleRecord数据，可用于循环战斗，直接代入pp_battle:battle_handing即可
+          NewRight_BattleRecord: 战斗结束后的右方battleRecord数据，功能同上
+          NewMyBattleScore：战斗积分、评价等数据，具体查看battleScore记录定义
+          
+4）其他数据处理（如物品掉落、战力显示等太多样性了，在自己协议里处理定义）。
+                         
+                                                                               liujing 2012-4-28 
+
+==========================================================================================================================                                                    

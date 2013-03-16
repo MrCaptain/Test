@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/timer
+END
+timer_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/timer/timer_mail.erl
+END
+timer_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/timer/timer_guild.erl
+END
+timer_sale.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/timer/timer_sale.erl
+END
+timer_pet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/timer/timer_pet.erl
+END
+timer_frame.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/timer/timer_frame.erl
+END
+timer_rank.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/timer/timer_rank.erl
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/config
+END
+gateway.app
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/config/gateway.app
+END
+gateway.config
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/config/gateway.config
+END
+server.app
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/config/server.app
+END
+run_1.config
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/config/run_1.config
+END
+run_2.config
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/config/run_2.config
+END
+run_3.config
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/config/run_3.config
+END

@@ -1,0 +1,10 @@
+K 14
+bugtraq:number
+V 4
+true
+K 13
+svn:externals
+V 69
+通讯协议定义 https://192.168.44.51:8443/svn/smxx_doc/protocol/
+
+END

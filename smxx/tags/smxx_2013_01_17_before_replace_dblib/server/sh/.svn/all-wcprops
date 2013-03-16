@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh
+END
+run_3.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/run_3.sh
+END
+run_robot.sh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/run_robot.sh
+END
+svn_www.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/svn_www.sh
+END
+make_record.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/make_record.sh
+END
+make.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/make.sh
+END
+make_erlang_data.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/make_erlang_data.sh
+END
+merge.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/merge.sh
+END
+gateway.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/gateway.sh
+END
+svn_checkout_server.sh
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/svn_checkout_server.sh
+END
+make_rls_version.sh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/make_rls_version.sh
+END
+run_1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/run_1.sh
+END
+run_2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/sh/run_2.sh
+END

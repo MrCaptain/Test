@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/smxx/!svn/ver/687/trunk/server/sh
+END
+server1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/smxx/!svn/ver/570/trunk/server/sh/server1.sh
+END
+updatedb.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/smxx/!svn/ver/687/trunk/server/sh/updatedb.sh
+END
+run_robot.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/smxx/!svn/ver/394/trunk/server/sh/run_robot.sh
+END
+make_record.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/95/trunk/server/sh/make_record.sh
+END
+run_robot2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/smxx/!svn/ver/97/trunk/server/sh/run_robot2.sh
+END
+make_erlang_data.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/471/trunk/server/sh/make_erlang_data.sh
+END
+gateway.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/smxx/!svn/ver/370/trunk/server/sh/gateway.sh
+END
+svn_checkout_server.sh
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/352/trunk/server/sh/svn_checkout_server.sh
+END
+make_all.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/smxx/!svn/ver/352/trunk/server/sh/make_all.sh
+END

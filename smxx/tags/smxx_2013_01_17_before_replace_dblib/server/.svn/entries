@@ -1,0 +1,86 @@
+10
+
+dir
+717
+https://192.168.44.51:8443/svn/smxx/tags/smxx_2013_01_17_before_replace_dblib/server
+https://192.168.44.51:8443/svn/smxx
+
+
+
+2013-01-17T03:03:16.481625Z
+86
+water
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b5d70867-13ea-bf4a-ba3b-d8f8a462c188
+
+Emakefile
+file
+
+
+
+
+2013-03-13T02:49:50.000000Z
+3385efef22852c60813a413218041ff2
+2013-01-10T06:47:30.343750Z
+13
+water
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+115
+
+include
+dir
+
+script
+dir
+
+config
+dir
+
+db
+dir
+
+doc
+dir
+
+src
+dir
+
+sh
+dir
+
+ebin
+dir
+

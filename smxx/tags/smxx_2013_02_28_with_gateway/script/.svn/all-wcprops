@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script
+END
+make_record.bat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/make_record.bat
+END
+build_plt.bat
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/build_plt.bat
+END
+run_team_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_team_robot.bat
+END
+run_mine_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_mine_robot.bat
+END
+run_1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_1.bat
+END
+run_2.bat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_2.bat
+END
+run_3.bat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_3.bat
+END
+make_new.bat
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/make_new.bat
+END
+run_tree_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_tree_robot.bat
+END
+run_conflict_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_conflict_robot.bat
+END
+make_erlang_data.bat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/make_erlang_data.bat
+END
+run_boss_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_boss_robot.bat
+END
+gateway.bat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/gateway.bat
+END
+make_all.bat
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/make_all.bat
+END
+install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/install.bat
+END
+conflict_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/conflict_robot.bat
+END
+run_dialyzer.bat
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_dialyzer.bat
+END
+run_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/script/run_robot.bat
+END

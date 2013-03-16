@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/test
+END
+union_to_emongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/test/union_to_emongo.erl
+END
+random_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/test/random_test.erl
+END
+mysql_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/test/mysql_test.erl
+END
+gmcmd.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/test/gmcmd.erl
+END
+excel2mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/test/excel2mysql.erl
+END
+mysql_to_emongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/test/mysql_to_emongo.erl
+END

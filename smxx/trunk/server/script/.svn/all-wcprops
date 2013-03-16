@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/smxx/!svn/ver/568/trunk/server/script
+END
+make_record.bat
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/95/trunk/server/script/make_record.bat
+END
+build_plt.bat
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/471/trunk/server/script/build_plt.bat
+END
+run_team_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/7/trunk/server/script/run_team_robot.bat
+END
+run_mine_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/7/trunk/server/script/run_mine_robot.bat
+END
+make_new.bat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/116/trunk/server/script/make_new.bat
+END
+server1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/550/trunk/server/script/server1.bat
+END
+run_tree_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/7/trunk/server/script/run_tree_robot.bat
+END
+run_conflict_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/7/trunk/server/script/run_conflict_robot.bat
+END
+make_erlang_data.bat
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/334/trunk/server/script/make_erlang_data.bat
+END
+run_boss_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/7/trunk/server/script/run_boss_robot.bat
+END
+gateway.bat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/550/trunk/server/script/gateway.bat
+END
+make_all.bat
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/103/trunk/server/script/make_all.bat
+END
+install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/7/trunk/server/script/install.bat
+END
+conflict_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/7/trunk/server/script/conflict_robot.bat
+END
+run_dialyzer.bat
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/471/trunk/server/script/run_dialyzer.bat
+END
+run_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/6/trunk/server/script/run_robot.bat
+END

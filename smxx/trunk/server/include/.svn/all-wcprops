@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/smxx/!svn/ver/715/trunk/server/include
+END
+rfc4627_jsonrpc.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/4/trunk/server/include/rfc4627_jsonrpc.hrl
+END
+rfc4627.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/4/trunk/server/include/rfc4627.hrl
+END
+task.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/692/trunk/server/include/task.hrl
+END
+etime.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/262/trunk/server/include/etime.hrl
+END
+guild.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/539/trunk/server/include/guild.hrl
+END
+mysql.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/95/trunk/server/include/mysql.hrl
+END
+goods_record.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/262/trunk/server/include/goods_record.hrl
+END
+shop.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/672/trunk/server/include/shop.hrl
+END
+goods.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/709/trunk/server/include/goods.hrl
+END
+battle.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/313/trunk/server/include/battle.hrl
+END
+record.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/712/trunk/server/include/record.hrl
+END
+http.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/smxx/!svn/ver/4/trunk/server/include/http.hrl
+END
+qlc.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/smxx/!svn/ver/4/trunk/server/include/qlc.hrl
+END
+log.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/smxx/!svn/ver/677/trunk/server/include/log.hrl
+END
+mail.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/358/trunk/server/include/mail.hrl
+END
+market.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/262/trunk/server/include/market.hrl
+END
+httpd.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/smxx/!svn/ver/4/trunk/server/include/httpd.hrl
+END
+rela.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/358/trunk/server/include/rela.hrl
+END
+emongo.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/6/trunk/server/include/emongo.hrl
+END
+auto_id.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/567/trunk/server/include/auto_id.hrl
+END
+etimer.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/262/trunk/server/include/etimer.hrl
+END
+debug.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/672/trunk/server/include/debug.hrl
+END
+team.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/701/trunk/server/include/team.hrl
+END
+table_to_record.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/715/trunk/server/include/table_to_record.hrl
+END
+meridian.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/675/trunk/server/include/meridian.hrl
+END
+common.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/709/trunk/server/include/common.hrl
+END

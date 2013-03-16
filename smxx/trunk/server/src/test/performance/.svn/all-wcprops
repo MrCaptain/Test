@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/11/trunk/server/src/test/performance
+END
+prof.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/11/trunk/server/src/test/performance/prof.erl
+END
+cast_and_call.erl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/11/trunk/server/src/test/performance/cast_and_call.erl
+END
+loop.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/11/trunk/server/src/test/performance/loop.erl
+END

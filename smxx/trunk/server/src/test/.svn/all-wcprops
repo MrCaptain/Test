@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/smxx/!svn/ver/678/trunk/server/src/test
+END
+union_to_emongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/11/trunk/server/src/test/union_to_emongo.erl
+END
+random_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/19/trunk/server/src/test/random_test.erl
+END
+mysql_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/11/trunk/server/src/test/mysql_test.erl
+END
+excel2mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/11/trunk/server/src/test/excel2mysql.erl
+END
+mysql_to_emongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/11/trunk/server/src/test/mysql_to_emongo.erl
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/new_robot
+END
+new_robot.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/new_robot/new_robot.erl
+END
+chat_script.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/new_robot/chat_script.erl
+END
+mail_script.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/new_robot/mail_script.erl
+END
+task_script.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/new_robot/task_script.erl
+END

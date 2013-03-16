@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp
+END
+pp_dungeon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_dungeon.erl
+END
+pp_gateway.erl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_gateway.erl
+END
+pp_task.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_task.erl
+END
+pp_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_guild.erl
+END
+pp_base.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_base.erl
+END
+pp_goods.erl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_goods.erl
+END
+pp_battle.erl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_battle.erl
+END
+pp_syssetting.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_syssetting.erl
+END
+pp_skill.erl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_skill.erl
+END
+pp_chat.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_chat.erl
+END
+pp_npc.erl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_npc.erl
+END
+pp_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_mail.erl
+END
+pp_target.erl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_target.erl
+END
+pp_antirevel.erl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_antirevel.erl
+END
+pp_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_player.erl
+END
+pp_account.erl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_account.erl
+END
+pp_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/pp/pp_scene.erl
+END

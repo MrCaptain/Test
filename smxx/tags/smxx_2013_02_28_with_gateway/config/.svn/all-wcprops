@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/config
+END
+gateway.app
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/config/gateway.app
+END
+gateway.config
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/config/gateway.config
+END
+server.app
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/config/server.app
+END
+run_1.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/config/run_1.config
+END
+run_2.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/config/run_2.config
+END
+run_3.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/config/run_3.config
+END

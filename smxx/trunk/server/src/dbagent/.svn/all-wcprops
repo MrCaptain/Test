@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/smxx/!svn/ver/710/trunk/server/src/dbagent
+END
+db_agent_battle.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/7/trunk/server/src/dbagent/db_agent_battle.erl
+END
+db_agent_goods.erl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/smxx/!svn/ver/673/trunk/server/src/dbagent/db_agent_goods.erl
+END
+db_agent_tool.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/7/trunk/server/src/dbagent/db_agent_tool.erl
+END
+db_agent_relation.erl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/smxx/!svn/ver/325/trunk/server/src/dbagent/db_agent_relation.erl
+END
+db_agent_skill.erl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/smxx/!svn/ver/205/trunk/server/src/dbagent/db_agent_skill.erl
+END
+db_agent.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/569/trunk/server/src/dbagent/db_agent.erl
+END
+db_log_agent.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/102/trunk/server/src/dbagent/db_log_agent.erl
+END
+db_agent_log.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/662/trunk/server/src/dbagent/db_agent_log.erl
+END
+db_agent_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/367/trunk/server/src/dbagent/db_agent_mail.erl
+END
+db_agent_meridian.erl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/smxx/!svn/ver/693/trunk/server/src/dbagent/db_agent_meridian.erl
+END
+db_agent_pet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/710/trunk/server/src/dbagent/db_agent_pet.erl
+END
+db_agent_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/smxx/!svn/ver/437/trunk/server/src/dbagent/db_agent_player.erl
+END
+db_agent_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/smxx/!svn/ver/133/trunk/server/src/dbagent/db_agent_scene.erl
+END
+db_agent_polish.erl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/smxx/!svn/ver/574/trunk/server/src/dbagent/db_agent_polish.erl
+END
+db_agent_dungeon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/smxx/!svn/ver/25/trunk/server/src/dbagent/db_agent_dungeon.erl
+END
+db_mongoutil.erl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/smxx/!svn/ver/7/trunk/server/src/dbagent/db_mongoutil.erl
+END
+db_mongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/7/trunk/server/src/dbagent/db_mongo.erl
+END
+db_agent_mount.erl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/smxx/!svn/ver/683/trunk/server/src/dbagent/db_agent_mount.erl
+END
+db_agent_task.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/555/trunk/server/src/dbagent/db_agent_task.erl
+END
+db_agent_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/smxx/!svn/ver/617/trunk/server/src/dbagent/db_agent_guild.erl
+END
+db_agent_system_config.erl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/238/trunk/server/src/dbagent/db_agent_system_config.erl
+END
+db_agent_shop_log.erl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/smxx/!svn/ver/673/trunk/server/src/dbagent/db_agent_shop_log.erl
+END

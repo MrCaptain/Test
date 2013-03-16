@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo
+END
+emongo_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo_test.erl
+END
+emongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo.erl
+END
+emongo_app.erl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo_app.erl
+END
+emongo_router.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo_router.erl
+END
+pqueue.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/pqueue.erl
+END
+emongo_bson.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo_bson.erl
+END
+emongo_server.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo_server.erl
+END
+emongo_packet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo_packet.erl
+END
+emongo_sup.erl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo_sup.erl
+END
+emongo_pool.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/emongo/emongo_pool.erl
+END

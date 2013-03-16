@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script
+END
+make_record.bat
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/make_record.bat
+END
+run_team_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_team_robot.bat
+END
+run_mine_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_mine_robot.bat
+END
+run_1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_1.bat
+END
+run_2.bat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_2.bat
+END
+run_3.bat
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_3.bat
+END
+make_new.bat
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/make_new.bat
+END
+run_tree_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_tree_robot.bat
+END
+run_conflict_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_conflict_robot.bat
+END
+make_erlang_data.bat
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/make_erlang_data.bat
+END
+run_boss_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_boss_robot.bat
+END
+gateway.bat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/gateway.bat
+END
+make_all.bat
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/make_all.bat
+END
+install.bat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/install.bat
+END
+conflict_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/conflict_robot.bat
+END
+run_robot.bat
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/script/run_robot.bat
+END

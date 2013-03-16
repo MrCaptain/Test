@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/erlydb
+END
+erlydb.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/erlydb/erlydb.erl
+END
+erlsql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/erlydb/erlsql.erl
+END
+smerl.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/erlydb/smerl.erl
+END
+erlydb_field.erl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/erlydb/erlydb_field.erl
+END
+erlydb_mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/erlydb/erlydb_mysql.erl
+END
+erlydb_base.erl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/erlydb/erlydb_base.erl
+END

@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/smxx/!svn/ver/712/trunk/server/src/pp
+END
+pp_dungeon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/21/trunk/server/src/pp/pp_dungeon.erl
+END
+pp_gateway.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/38/trunk/server/src/pp/pp_gateway.erl
+END
+pp_mount.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/682/trunk/server/src/pp/pp_mount.erl
+END
+pp_task.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/664/trunk/server/src/pp/pp_task.erl
+END
+pp_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/634/trunk/server/src/pp/pp_guild.erl
+END
+pp_physique.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/583/trunk/server/src/pp/pp_physique.erl
+END
+pp_system_config.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/238/trunk/server/src/pp/pp_system_config.erl
+END
+pp_base.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/592/trunk/server/src/pp/pp_base.erl
+END
+pp_goods.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/710/trunk/server/src/pp/pp_goods.erl
+END
+pp_battle.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/232/trunk/server/src/pp/pp_battle.erl
+END
+pp_relation.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/325/trunk/server/src/pp/pp_relation.erl
+END
+pp_skill.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/205/trunk/server/src/pp/pp_skill.erl
+END
+pp_chat.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/712/trunk/server/src/pp/pp_chat.erl
+END
+pp_npc.erl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/smxx/!svn/ver/4/trunk/server/src/pp/pp_npc.erl
+END
+pp_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/677/trunk/server/src/pp/pp_mail.erl
+END
+pp_target.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/21/trunk/server/src/pp/pp_target.erl
+END
+pp_team.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/712/trunk/server/src/pp/pp_team.erl
+END
+pp_meridian.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/676/trunk/server/src/pp/pp_meridian.erl
+END
+pp_pet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/711/trunk/server/src/pp/pp_pet.erl
+END
+pp_antirevel.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/52/trunk/server/src/pp/pp_antirevel.erl
+END
+pp_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/710/trunk/server/src/pp/pp_player.erl
+END
+pp_account.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/540/trunk/server/src/pp/pp_account.erl
+END
+pp_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/708/trunk/server/src/pp/pp_scene.erl
+END

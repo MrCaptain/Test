@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/smxx/!svn/ver/678/trunk/server/src/test/robot
+END
+robot_chat.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/678/trunk/server/src/test/robot/robot_chat.erl
+END
+robot.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/656/trunk/server/src/test/robot/robot.erl
+END
+robot_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/588/trunk/server/src/test/robot/robot_mail.erl
+END
+robot.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/656/trunk/server/src/test/robot/robot.hrl
+END
+robot_gm.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/639/trunk/server/src/test/robot/robot_gm.erl
+END
+robot_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/smxx/!svn/ver/656/trunk/server/src/test/robot/robot_guild.erl
+END
+robot_pet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/588/trunk/server/src/test/robot/robot_pet.erl
+END

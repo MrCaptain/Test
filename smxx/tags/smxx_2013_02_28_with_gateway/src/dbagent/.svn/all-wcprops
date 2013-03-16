@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent
+END
+db_agent_goods.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_goods.erl
+END
+db_agent_battle.erl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_battle.erl
+END
+db_agent_tool.erl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_tool.erl
+END
+db_agent_relation.erl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_relation.erl
+END
+db_agent_skill.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_skill.erl
+END
+db_agent.erl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent.erl
+END
+db_log_agent.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_log_agent.erl
+END
+db_agent_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_mail.erl
+END
+db_agent_pet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_pet.erl
+END
+db_agent_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_player.erl
+END
+db_agent_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_scene.erl
+END
+db_agent_dungeon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_dungeon.erl
+END
+db_mongoutil.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_mongoutil.erl
+END
+db_mongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_mongo.erl
+END
+db_agent_task.erl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_task.erl
+END
+db_agent_mount.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_mount.erl
+END
+db_agent_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_guild.erl
+END
+db_agent_system_config.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/dbagent/db_agent_system_config.erl
+END

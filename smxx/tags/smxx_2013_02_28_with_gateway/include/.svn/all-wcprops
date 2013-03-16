@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include
+END
+rfc4627_jsonrpc.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/rfc4627_jsonrpc.hrl
+END
+rfc4627.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/rfc4627.hrl
+END
+task.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/task.hrl
+END
+etime.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/etime.hrl
+END
+guild.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/guild.hrl
+END
+mysql.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/mysql.hrl
+END
+goods_record.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/goods_record.hrl
+END
+goods.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/goods.hrl
+END
+battle.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/battle.hrl
+END
+record.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/record.hrl
+END
+http.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/http.hrl
+END
+qlc.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/qlc.hrl
+END
+common_shop.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/common_shop.hrl
+END
+mail.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/mail.hrl
+END
+market.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/market.hrl
+END
+httpd.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/httpd.hrl
+END
+rela.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/rela.hrl
+END
+emongo.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/emongo.hrl
+END
+etimer.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/etimer.hrl
+END
+debug.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/debug.hrl
+END
+table_to_record.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/table_to_record.hrl
+END
+common.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/common.hrl
+END
+common_log.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/include/common_log.hrl
+END

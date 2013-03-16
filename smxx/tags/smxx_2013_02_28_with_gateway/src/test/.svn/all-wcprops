@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test
+END
+union_to_emongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/union_to_emongo.erl
+END
+random_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/random_test.erl
+END
+mysql_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/mysql_test.erl
+END
+excel2mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/excel2mysql.erl
+END
+mysql_to_emongo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/mysql_to_emongo.erl
+END

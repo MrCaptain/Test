@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib
+END
+lib_shop.erl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_shop.erl
+END
+lib_system_config.erl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_system_config.erl
+END
+lib_words_ver.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_words_ver.erl
+END
+lib_goods.erl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_goods.erl
+END
+lib_battle.erl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_battle.erl
+END
+lib_relation.erl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_relation.erl
+END
+lib_skill.erl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_skill.erl
+END
+lib_npc.erl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_npc.erl
+END
+battle_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/battle_util.erl
+END
+goods_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/goods_util.erl
+END
+lib_market.erl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_market.erl
+END
+lib_suit.erl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_suit.erl
+END
+lib_casting.erl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_casting.erl
+END
+lib_mon_state.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_mon_state.erl
+END
+buff_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/buff_util.erl
+END
+lib_send.erl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_send.erl
+END
+log.erl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/log.erl
+END
+lib_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_player.erl
+END
+lib_dungeon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_dungeon.erl
+END
+etimer.erl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/etimer.erl
+END
+lib_mount.erl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_mount.erl
+END
+lib_task.erl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_task.erl
+END
+lib_drop.erl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_drop.erl
+END
+guild_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/guild_util.erl
+END
+etime.erl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/etime.erl
+END
+lib_chat.erl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_chat.erl
+END
+lib_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_mail.erl
+END
+lib_equip.erl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_equip.erl
+END
+lib_goods_use.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_goods_use.erl
+END
+lib_money.erl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_money.erl
+END
+lib_common.erl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_common.erl
+END
+lib_pet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_pet.erl
+END
+lib_mon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_mon.erl
+END
+lib_antirevel.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_antirevel.erl
+END
+lib_account.erl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_account.erl
+END
+lib_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_scene.erl
+END
+casting_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/casting_util.erl
+END
+lib_gm.erl
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_gm.erl
+END
+lib_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_guild.erl
+END
+lib_player_rw.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/lib_player_rw.erl
+END

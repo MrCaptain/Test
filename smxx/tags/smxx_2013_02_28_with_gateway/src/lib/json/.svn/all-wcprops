@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json
+END
+rfc4627_jsonrpc_sup.erl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json/rfc4627_jsonrpc_sup.erl
+END
+rfc4627_jsonrpc_registry.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json/rfc4627_jsonrpc_registry.erl
+END
+rfc4627_jsonrpc_mochiweb.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json/rfc4627_jsonrpc_mochiweb.erl
+END
+rfc4627_jsonrpc_http.erl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json/rfc4627_jsonrpc_http.erl
+END
+rfc4627_jsonrpc.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json/rfc4627_jsonrpc.erl
+END
+rfc4627_jsonrpc_app.erl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json/rfc4627_jsonrpc_app.erl
+END
+rfc4627.erl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json/rfc4627.erl
+END
+rfc4627_jsonrpc_inets.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/json/rfc4627_jsonrpc_inets.erl
+END

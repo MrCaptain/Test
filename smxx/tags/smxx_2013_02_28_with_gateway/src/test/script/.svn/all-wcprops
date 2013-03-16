@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script
+END
+test_client2.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/test_client2.erl
+END
+test_client3.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/test_client3.erl
+END
+guild_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/guild_test.erl
+END
+robot_tree.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/robot_tree.erl
+END
+robot_conflict.erl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/robot_conflict.erl
+END
+robot_others.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/robot_others.erl
+END
+robot_friend.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/robot_friend.erl
+END
+bossrobot.erl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/bossrobot.erl
+END
+test_client.erl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/test_client.erl
+END
+mail_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/mail_test.erl
+END
+robot_chat.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/robot_chat.erl
+END
+robot.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/robot.erl
+END
+pet_test.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/pet_test.erl
+END
+tt.erl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/tt.erl
+END
+robot_team.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/robot_team.erl
+END
+robot_mine.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/test/script/robot_mine.erl
+END

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data
+END
+data_boss.erl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_boss.erl
+END
+data_scene_mon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_scene_mon.erl
+END
+data_equipment.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_equipment.erl
+END
+data_gem.erl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_gem.erl
+END
+data_antirevel.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_antirevel.erl
+END
+data_battle.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_battle.erl
+END
+data_set.erl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_set.erl
+END
+data_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_player.erl
+END
+data_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_scene.erl
+END
+data_scene_npc.erl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_scene_npc.erl
+END
+data_words.erl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_words.erl
+END
+data_task.erl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_task.erl
+END
+data_holy_gem.erl
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/data/data_holy_gem.erl
+END

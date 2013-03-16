@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/smxx/!svn/ver/686/trunk/server/config
+END
+gateway.app
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/6/trunk/server/config/gateway.app
+END
+gateway.config
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/686/trunk/server/config/gateway.config
+END
+server.app
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/550/trunk/server/config/server.app
+END
+server.config
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/686/trunk/server/config/server.config
+END

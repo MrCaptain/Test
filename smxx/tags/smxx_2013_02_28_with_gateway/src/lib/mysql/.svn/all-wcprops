@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql
+END
+db_mysql_admin.erl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/db_mysql_admin.erl
+END
+mysql_conn.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/mysql_conn.erl
+END
+mysql_recv.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/mysql_recv.erl
+END
+mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/mysql.erl
+END
+mysql_auth.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/mysql_auth.erl
+END
+db_mysqlutil.erl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/db_mysqlutil.erl
+END
+db_esql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/db_esql.erl
+END
+mysql_demo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/mysql_demo.erl
+END
+db_mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/src/lib/mysql/db_mysql.erl
+END

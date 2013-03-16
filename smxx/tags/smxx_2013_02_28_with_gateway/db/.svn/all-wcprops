@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/db
+END
+smxx_base.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/db/smxx_base.sql
+END
+smxx.sql
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/db/smxx.sql
+END
+smxx_log.sql
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/smxx/!svn/ver/549/tags/smxx_2013_02_28_with_gateway/db/smxx_log.sql
+END

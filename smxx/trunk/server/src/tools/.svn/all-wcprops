@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/smxx/!svn/ver/712/trunk/server/src/tools
+END
+mtop.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/101/trunk/server/src/tools/mtop.erl
+END
+table_to_erlang.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/646/trunk/server/src/tools/table_to_erlang.erl
+END
+table_to_record.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/712/trunk/server/src/tools/table_to_record.erl
+END
+record_to_code.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/327/trunk/server/src/tools/record_to_code.erl
+END

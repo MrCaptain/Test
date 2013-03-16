@@ -1,0 +1,129 @@
+%-信件, 反馈
+%-分类号: 19
+%-
+%%-------------------------------------------------
+%% 邮件/GM模块 错误返回码
+%%-------------------------------------------------
+%-define(MAIL_OTHER_ERROR,           0).  %% 其它错误
+%-define(MAIL_WRONG_TITLE,           2).  %% 标题错误
+%-define(MAIL_WRONG_CONTENT,         3).  %% 内容错误
+%-define(MAIL_WRONG_NAME,            4).  %% 无合法收件人
+%-define(MAIL_BOX_FULL,              5).  %% 对方邮件已满
+%-define(MAIL_NOT_ENOUGH_SPACE,      6).  %% 背包已满
+%-define(MAIL_ATTACH_NOT_EXIST,      7).  %% 信件中不存在附件
+%-define(MAIL_GOODS_NOT_EXIST,       8).  %% 信件中物品已提取
+%-define(MAIL_WRONG_ID,              9).  %% 信件ID有误
+%-define(MAIL_TOO_FAST,             10).  %% 信件发得太快了休息一下吧
+%%-------------------------------------------------
+
+%---------------------------------------------
+%Protocol: 19001 玩家反馈到GM
+%---------------------------------------------
+c >> s:
+    int:8  Type    类型1Bug 2投诉 3 建议 4其它
+    string Content 内容
+s >> c:
+    int:8 Result  状态0失败,1成功
+end
+
+%---------------------------------------------
+%Protocol: 19002  获取GM反馈
+%---------------------------------------------
+c >> s:
+s >> c:
+    array { FbList      反馈列表
+     int:32 FbId        反馈ID
+     int:8  Type        类型
+     int:8  State       状态1已回复,0未回复
+     array { ContentList    内容列表
+            string Name     名字(NICK or GM)
+            string Content  内容/回复内容
+            int32  Date     时间(1970-01-01以来秒数)
+         }
+    }
+end
+       
+
+%--------------------------------
+%Protocol: 19010  是否有未读邮件
+%--------------------------------
+c >> s
+s >> c
+    int:8  Num  未读邮件数量(0没有新邮件，其他为未读数量)
+end    
+
+%--------------------------------
+%Protocol: 19011  邮件列表
+%--------------------------------
+c >> s:
+s >> c:
+    array {  MailList      邮件列表
+            int:32 MailId   信件id
+            int:8  Type     信件类型（1系统/2私人）
+            int:8  State    信件状态（1已读/2未读/3已读有附件/4未读有附件）
+            int:32 Date     时间戳(发送时间)
+            string SName    发件人
+            string Title    信件标题
+    }
+end
+
+%--------------------------------
+%Protocol: 19012  邮件具体内容
+%--------------------------------
+C >> S
+    int:32  MailId   邮件ID
+S >> C
+    int:8  StCode   结果码（0失败 1成功）
+    int:32 MailId   信件id
+    string Content  信件内容
+    array { GoodList  物品列表
+        int:32 GoodTypeId  物品类型ID
+        int:8  GoodsNum    物品数量
+        int:8  Exist       附件未提取1, 提取后0
+    }
+end
+
+%--------------------------------
+%Protocol: 19013 回复邮件
+%--------------------------------
+c >> s
+    int:32   MailId   邮件ID(要回复的邮件ID)
+    string   Content  邮件内容
+s >> c
+    int:8    Result    结果码（0失败 1成功）
+end
+
+%--------------------------------
+%Protocol: 19014 收取附件
+%--------------------------------
+c >> s:
+    int:32 MailId  信件id
+s >> c:
+    int:8 Result  0失败 1成功  2背包已满 3附件不存在 4物品不存在
+end
+
+%--------------------------------
+%Protocol: 19015 删除邮件
+%--------------------------------
+c >> s:
+    int:32 MailId  信件id
+s >> c:
+    int:8 Result  0失败 1成功
+end
+
+
+%--------------------------------
+%Protocol: 19016 发送邮件
+%--------------------------------
+c >> s
+    string   Title     邮件标题
+    string   Content   邮件内容
+    array {  RecvList  接收方
+        string Name  接收玩家名
+    }
+s >> c
+    int:8    Result    结果码（0失败 1成功）
+    array {  ErrRecvList  接收方错误名字列表
+        string ErrName    错误的玩家名
+    }
+end

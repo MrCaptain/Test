@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/tools
+END
+table_to_erlang.erl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/tools/table_to_erlang.erl
+END
+table_to_record.erl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/tools/table_to_record.erl
+END
+record_to_code.erl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/tools/record_to_code.erl
+END

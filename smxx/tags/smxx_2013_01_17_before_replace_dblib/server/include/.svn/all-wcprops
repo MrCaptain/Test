@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include
+END
+rfc4627_jsonrpc.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/rfc4627_jsonrpc.hrl
+END
+rfc4627.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/rfc4627.hrl
+END
+task.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/task.hrl
+END
+debug_trace.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/debug_trace.hrl
+END
+mysql.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/mysql.hrl
+END
+goods.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/goods.hrl
+END
+battle.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/battle.hrl
+END
+record.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/record.hrl
+END
+qlc.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/qlc.hrl
+END
+http.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/http.hrl
+END
+guild_info.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/guild_info.hrl
+END
+httpd.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/httpd.hrl
+END
+emongo.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/emongo.hrl
+END
+debug.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/debug.hrl
+END
+table_to_record.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/table_to_record.hrl
+END
+common.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/include/common.hrl
+END

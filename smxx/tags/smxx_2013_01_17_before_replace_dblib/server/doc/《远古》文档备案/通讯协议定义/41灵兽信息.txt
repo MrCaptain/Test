@@ -1,0 +1,255 @@
+41 灵兽协议
+
+#################灵兽生成##########################
+协议号 41001
+c > s
+	int:32 goods_id 灵兽类型id
+	int:32 runeid 召唤卡id
+s > c
+	int:16 状态号
+		0 失败
+		1 成功
+		2 物品信息不存在
+		3 灵兽信息不存在
+		4 等级不够
+		5铜币不足
+		6灵兽已满
+		7物品类型错误
+		8没有召唤卡
+	int:32
+		剩余铜币
+	int:32
+		剩余绑铜
+	int:32
+		灵兽id
+	striing
+		灵兽名字
+		
+#################灵兽放生##########################
+协议号 41002
+c > s
+	int:32 pet_id  灵兽id
+s > c
+	int:16 状态号
+	int:32 灵兽id
+		
+#################灵兽改名##########################
+协议号 41003
+c > s
+	int:32 pet_id 灵兽id
+	string pet_name
+s > c
+	int:16 状态号
+		1 成功
+		2 宠物不存在
+		3 宠物不归你所有
+		4 新旧名称相同
+		5名字含有敏感词
+	int:32 pet_id
+	string pet_name
+	
+#################灵兽状态切换######################
+协议号 41004
+c > s
+	int:32 pet_id 
+	int:16 Status
+s > c
+	int:16 状态号
+		0 失败
+		1 成功
+		2 灵兽不存在
+		3 灵兽不归你所有
+		4 灵兽已经出战
+		5 灵兽happy值为 0
+		6 灵兽已经休息
+	int:32 pet_id
+	int:16 status 状态值
+		
+#################灵兽资质提升######################
+协议号 41005
+c > s
+	int:32 pet_id
+	int:32 goods_id 资质提升符类型id
+	int:32 goods_id 资质保护符id
+s > c
+	int:16 状态码
+			2灵兽不存在
+			3灵兽不归你所有
+			4物品信息不存在
+			5资质已到上限
+			6铜币不足
+			7物品类型错误
+	int:32 pet_id
+	int:32 aptitude 资质
+	int:32 剩余资质提升符个数
+	int:32 剩余资质保护符个数
+	
+#################灵兽喂养##########################
+协议号 41006
+c > s 
+	int:32 pet_id
+	int:32 goods_id 道具类型id
+	int:16 foodUseNum
+
+s > c
+	int:16 res 状态号
+		0 失败
+		1 成功
+		2 灵兽不存在
+		3 物品不存在
+		4 灵兽不归你所有
+		5快乐值已满
+		6物品不归你所有
+		7物品类型不正确
+		8数量错误
+	int:32 pet_id
+	int:32 happy 快乐值
+	int:32 restNum 剩下灵兽口粮数
+	
+################灵兽信息###########################
+协议号 41007
+c > s
+	int:32 pet_id
+s > c
+		int:32 pet_id
+		int:32 player_id
+		int:32 goods_id
+		string name
+		int:16 rename_count 修改名字次数 
+		int:16 level 等级
+		int:32 exp 当前经验
+		int:32 exp_limit 经验上限
+		int:32 happy 快乐值
+		int:16 point 可分配点
+		int:32 forza 力量
+		int:32 wit 智力
+		int:32 agile 敏捷
+		int:32 physique 体质
+		int:32 aptitude 资质
+		int:16 status 宠物状态
+		int:16 skill_1 技能1
+		int 32 技能1加成效果
+		int:16 skill_2 技能2
+		int 32 技能2加成效果
+		int:16 skill_3 技能3
+		int 32 技能3加成效果
+		int:16 skill_4 技能4
+		int 32 技能4加成效果
+		int:32 time 宠物生成时间戳
+		int:16 ratio 资质提升成功率
+		int:32 cost 资质提升消耗
+
+################灵兽列表信息#######################
+协议号 41008
+c > s
+	int:32 player_id
+s > c
+	int:16 状态码
+		0 失败
+		1成功
+	int:16 循环次数
+	array(
+		int:32 pet_id
+		int:32 player_id
+		int:32 goods_id
+		string name
+		int:16 rename_count 修改名字次数 
+		int:16 level 等级
+		int:32 exp 当前经验
+		int:32 exp_limit 经验上限
+		int:32 happy 快乐值
+		int:16 point 可分配点
+		int:32 forza 力量
+		int:32 wit 智力
+		int:32 agile 敏捷
+		int:32 physique 体质
+		int:32 aptitude 资质
+		int:16 status 宠物状态
+		int:16 skill_1 技能1
+		int 32 技能1加成效果
+		int:16 skill_2 技能2
+		int 32 技能2加成效果
+		int:16 skill_3 技能3
+		int 32 技能3加成效果
+		int:16 skill_4 技能4
+		int 32 技能4加成效果
+		int:32 time 宠物生成时间戳
+		int:16 ratio 资质提升成功率
+		int:32 cost 资质提升消耗
+	)
+		
+################灵兽属性加点#######################
+协议号 41009
+c > s
+	int:32 pet_id
+	int:32 forza 力量
+	int:32 agile 敏捷
+	int:32 wit智力
+	int:32 physique体质
+s > c
+	int:16 状态号
+		0 失败
+		1 成功
+		2 灵兽不存在
+		3 灵兽不归你所有
+		4属性点不足
+		5属性点错误
+	int:32 pet_id
+	int:32 forza 力量
+	int:32 agile 敏捷
+	int:32 wit智力
+	int:32 physique体质
+	int:32 point 剩余点数
+	
+################取灵兽快乐值和经验##################
+协议号 41010
+c > s
+	int:32 pet_id
+s > c
+	int:16 状态号
+		0 失败
+		1成功
+	int:32 pet_id
+	int:32 happy 快乐值
+	int:32 exp 经验值
+	int:32 level 当前等级
+	int:32 max_exp 最大经验
+	string name
+	int:32 goods_id 类型id
+
+###############使用秘籍升级灵兽#######################
+协议号 41011
+c > s 
+	int:32 pet_id
+	int:32 goods_id 道具类型id
+s > c
+	int:16 状态号
+			0失败
+			1成功
+			2灵兽不存在
+			3灵兽未到达15级
+			4经验值未满
+			5物品使用错误
+	int:32 pet_id 灵兽ID
+	int:32 level 灵兽等级
+	int:32 happy 快乐值
+	int:32 exp 当前经验
+	int:32 max_exp 最大经验
+	int:32 point 当前点数
+	
+##################灵兽道具查询########################
+协议号41012
+c > s
+	int:32 goods_id 道具类型id
+s > c
+	int:32 goods_d 物品id
+	int:32 totalnum 物品数量
+
+#######################灵兽洗点#############################
+协议号：41013
+c>>s
+	int 32 灵兽id
+s>>c:
+	int 16 洗点结果（0:未知错误，1 洗点成功，2灵兽不存在，3灵兽不归你所有，4没有灵兽洗点符
+	int 32 灵兽id
+	int 16 灵兽点数

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/smxx/!svn/ver/95/trunk/server/src/lib/erlydb
+END
+erlydb.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/18/trunk/server/src/lib/erlydb/erlydb.erl
+END
+erlsql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/18/trunk/server/src/lib/erlydb/erlsql.erl
+END
+smerl.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/18/trunk/server/src/lib/erlydb/smerl.erl
+END
+erlydb_field.erl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/smxx/!svn/ver/18/trunk/server/src/lib/erlydb/erlydb_field.erl
+END
+erlydb_mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/smxx/!svn/ver/95/trunk/server/src/lib/erlydb/erlydb_mysql.erl
+END
+erlydb_base.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/18/trunk/server/src/lib/erlydb/erlydb_base.erl
+END

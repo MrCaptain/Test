@@ -1,0 +1,86 @@
+10
+
+dir
+717
+https://192.168.44.51:8443/svn/smxx/tags/smxx_2013_02_28_with_gateway
+https://192.168.44.51:8443/svn/smxx
+
+
+
+2013-02-28T11:36:49.895250Z
+549
+water
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b5d70867-13ea-bf4a-ba3b-d8f8a462c188
+
+Emakefile
+file
+
+
+
+
+2013-03-13T02:49:54.000000Z
+ceb371f6d429f03bbf1a805f627601ab
+2013-01-24T11:18:43.250000Z
+199
+yejianhui
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+182
+
+include
+dir
+
+script
+dir
+
+config
+dir
+
+db
+dir
+
+doc
+dir
+
+src
+dir
+
+sh
+dir
+
+ebin
+dir
+

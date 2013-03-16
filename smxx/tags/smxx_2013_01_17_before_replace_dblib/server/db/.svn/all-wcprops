@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db
+END
+temp_player.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_player.sql
+END
+temp_scene.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_scene.sql
+END
+temp_npc_refresh.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_npc_refresh.sql
+END
+temp_combat_attr.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_combat_attr.sql
+END
+player_sys_setting.sql
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/player_sys_setting.sql
+END
+temp_monster_refresh.sql
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_monster_refresh.sql
+END
+player.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/player.sql
+END
+temp_item_set.sql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_item_set.sql
+END
+temp_goods.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_goods.sql
+END
+temp_skill.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_skill.sql
+END
+temp_npc.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_npc.sql
+END
+temp_notice.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_notice.sql
+END
+temp_item_holy_gem.sql
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_item_holy_gem.sql
+END
+server.sql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/server.sql
+END
+system_config.sql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/system_config.sql
+END
+temp_item_equipment.sql
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_item_equipment.sql
+END
+temp_item_gem.sql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_item_gem.sql
+END
+goods.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/goods.sql
+END
+temp_mon.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/temp_mon.sql
+END
+skill.sql
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/skill.sql
+END
+user.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/db/user.sql
+END

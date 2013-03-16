@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/smxx/!svn/ver/717/trunk/server/src/mod
+END
+mod_market_supply.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/630/trunk/server/src/mod/mod_market_supply.erl
+END
+mod_dungeon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/338/trunk/server/src/mod/mod_dungeon.erl
+END
+mod_mount.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/7/trunk/server/src/mod/mod_mount.erl
+END
+mod_task.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/664/trunk/server/src/mod/mod_task.erl
+END
+mod_npc_create.erl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/22/trunk/server/src/mod/mod_npc_create.erl
+END
+mod_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/701/trunk/server/src/mod/mod_guild.erl
+END
+mod_login.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/609/trunk/server/src/mod/mod_login.erl
+END
+mod_shop.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/673/trunk/server/src/mod/mod_shop.erl
+END
+mod_goods.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/710/trunk/server/src/mod/mod_goods.erl
+END
+mod_police.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/7/trunk/server/src/mod/mod_police.erl
+END
+mod_scene_agent.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/627/trunk/server/src/mod/mod_scene_agent.erl
+END
+mod_disperse.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/705/trunk/server/src/mod/mod_disperse.erl
+END
+mod_kernel.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/710/trunk/server/src/mod/mod_kernel.erl
+END
+mod_offline.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/663/trunk/server/src/mod/mod_offline.erl
+END
+mod_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/677/trunk/server/src/mod/mod_mail.erl
+END
+mod_rand.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/634/trunk/server/src/mod/mod_rand.erl
+END
+mod_pid_send.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/7/trunk/server/src/mod/mod_pid_send.erl
+END
+mod_task_cache.erl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/smxx/!svn/ver/377/trunk/server/src/mod/mod_task_cache.erl
+END
+mod_goods_l.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/512/trunk/server/src/mod/mod_goods_l.erl
+END
+mod_team.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/712/trunk/server/src/mod/mod_team.erl
+END
+mod_mine.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/604/trunk/server/src/mod/mod_mine.erl
+END
+mod_misc.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/663/trunk/server/src/mod/mod_misc.erl
+END
+mod_online_count.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/663/trunk/server/src/mod/mod_online_count.erl
+END
+mod_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/717/trunk/server/src/mod/mod_player.erl
+END
+mod_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/681/trunk/server/src/mod/mod_scene.erl
+END

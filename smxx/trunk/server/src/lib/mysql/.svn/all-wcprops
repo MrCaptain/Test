@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/smxx/!svn/ver/564/trunk/server/src/lib/mysql
+END
+db_mysql_admin.erl
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/smxx/!svn/ver/95/trunk/server/src/lib/mysql/db_mysql_admin.erl
+END
+mysql_conn.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/95/trunk/server/src/lib/mysql/mysql_conn.erl
+END
+mysql_recv.erl
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/smxx/!svn/ver/7/trunk/server/src/lib/mysql/mysql_recv.erl
+END
+mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/390/trunk/server/src/lib/mysql/mysql.erl
+END
+mysql_auth.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/95/trunk/server/src/lib/mysql/mysql_auth.erl
+END
+db_mysqlutil.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/78/trunk/server/src/lib/mysql/db_mysqlutil.erl
+END
+db_esql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/564/trunk/server/src/lib/mysql/db_esql.erl
+END
+mysql_demo.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/14/trunk/server/src/lib/mysql/mysql_demo.erl
+END
+db_mysql.erl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/95/trunk/server/src/lib/mysql/db_mysql.erl
+END

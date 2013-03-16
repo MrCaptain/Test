@@ -1,0 +1,263 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/smxx/!svn/ver/716/trunk/server/src/lib
+END
+lib_shop.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/673/trunk/server/src/lib/lib_shop.erl
+END
+lib_system_config.erl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/smxx/!svn/ver/503/trunk/server/src/lib/lib_system_config.erl
+END
+lib_words_ver.erl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/540/trunk/server/src/lib/lib_words_ver.erl
+END
+lib_goods.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/662/trunk/server/src/lib/lib_goods.erl
+END
+lib_battle.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/650/trunk/server/src/lib/lib_battle.erl
+END
+lib_relation.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/358/trunk/server/src/lib/lib_relation.erl
+END
+lib_skill.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/502/trunk/server/src/lib/lib_skill.erl
+END
+lib_npc.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/40/trunk/server/src/lib/lib_npc.erl
+END
+battle_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/313/trunk/server/src/lib/battle_util.erl
+END
+goods_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/710/trunk/server/src/lib/goods_util.erl
+END
+lib_market.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/630/trunk/server/src/lib/lib_market.erl
+END
+lib_suit.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/469/trunk/server/src/lib/lib_suit.erl
+END
+lib_team.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/712/trunk/server/src/lib/lib_team.erl
+END
+lib_meridian.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/693/trunk/server/src/lib/lib_meridian.erl
+END
+lib_casting.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/574/trunk/server/src/lib/lib_casting.erl
+END
+lib_mon_state.erl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/531/trunk/server/src/lib/lib_mon_state.erl
+END
+buff_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/605/trunk/server/src/lib/buff_util.erl
+END
+lib_send.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/662/trunk/server/src/lib/lib_send.erl
+END
+log.erl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/smxx/!svn/ver/662/trunk/server/src/lib/log.erl
+END
+lib_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/716/trunk/server/src/lib/lib_player.erl
+END
+lib_dungeon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/7/trunk/server/src/lib/lib_dungeon.erl
+END
+etimer.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/262/trunk/server/src/lib/etimer.erl
+END
+lib_mount.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/683/trunk/server/src/lib/lib_mount.erl
+END
+lib_task.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/693/trunk/server/src/lib/lib_task.erl
+END
+lib_drop.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/428/trunk/server/src/lib/lib_drop.erl
+END
+guild_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/656/trunk/server/src/lib/guild_util.erl
+END
+etime.erl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/262/trunk/server/src/lib/etime.erl
+END
+lib_chat.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/343/trunk/server/src/lib/lib_chat.erl
+END
+lib_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/smxx/!svn/ver/677/trunk/server/src/lib/lib_mail.erl
+END
+lib_equip.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/697/trunk/server/src/lib/lib_equip.erl
+END
+lib_goods_use.erl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/151/trunk/server/src/lib/lib_goods_use.erl
+END
+lib_money.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/710/trunk/server/src/lib/lib_money.erl
+END
+lib_pet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/710/trunk/server/src/lib/lib_pet.erl
+END
+lib_common.erl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/smxx/!svn/ver/428/trunk/server/src/lib/lib_common.erl
+END
+lib_mon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/smxx/!svn/ver/690/trunk/server/src/lib/lib_mon.erl
+END
+lib_antirevel.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/52/trunk/server/src/lib/lib_antirevel.erl
+END
+lib_account.erl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/smxx/!svn/ver/584/trunk/server/src/lib/lib_account.erl
+END
+lib_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/695/trunk/server/src/lib/lib_scene.erl
+END
+team_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/712/trunk/server/src/lib/team_util.erl
+END
+casting_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/662/trunk/server/src/lib/casting_util.erl
+END
+lib_gm.erl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/smxx/!svn/ver/650/trunk/server/src/lib/lib_gm.erl
+END
+lib_guild.erl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/smxx/!svn/ver/656/trunk/server/src/lib/lib_guild.erl
+END
+lib_player_rw.erl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/710/trunk/server/src/lib/lib_player_rw.erl
+END

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib
+END
+lib_words_ver.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_words_ver.erl
+END
+lib_goods.erl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_goods.erl
+END
+lib_battle.erl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_battle.erl
+END
+lib_syssetting.erl
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_syssetting.erl
+END
+lib_chat.erl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_chat.erl
+END
+lib_npc.erl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_npc.erl
+END
+lib_mail.erl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_mail.erl
+END
+goods_util.erl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/goods_util.erl
+END
+lib_goods_use.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_goods_use.erl
+END
+lib_pet.erl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_pet.erl
+END
+lib_antirevel.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_antirevel.erl
+END
+lib_send.erl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_send.erl
+END
+lib_player.erl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_player.erl
+END
+lib_account.erl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_account.erl
+END
+lib_scene.erl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_scene.erl
+END
+lib_dungeon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_dungeon.erl
+END
+lib_player_rw.erl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/smxx/!svn/ver/87/tags/smxx_2013_01_17_before_replace_dblib/server/src/lib/lib_player_rw.erl
+END
