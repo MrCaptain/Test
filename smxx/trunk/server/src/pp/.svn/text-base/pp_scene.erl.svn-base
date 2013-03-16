@@ -190,9 +190,9 @@ handle(12019, Status, [TaskId,NpcId]) ->
 
 %% 玩家原地复活
 handle(12020, Status, []) ->
-	GoodsTypeId = data_config:get_revive_googs() ,
-	case goods_util:del_bag_goods(Status, GoodsTypeId, 1, 12020) of
-		true ->
+%% 	GoodsTypeId = data_config:get_revive_googs() ,
+%% 	case goods_util:del_bag_goods(Status, GoodsTypeId, 1, 12020) of
+%% 		true ->
 			NewStatus = lib_player:revive(Status, here),  %#player{hit_point = Status#player.hit_point_max} ,
 			%% 同步玩家状态到场景
 			{ok, BinData} = pt_12:write(12003, [NewStatus]),
@@ -202,11 +202,11 @@ handle(12020, Status, []) ->
 			{ok, DataBin} = pt_12:write(12020, [1]) ,
 			lib_send:send_to_sid(Status#player.other#player_other.pid_send, DataBin) ,
 			{ok,NewStatus} ;
-		_ ->
-			{ok, DataBin} = pt_12:write(12020, [0]) ,
-			lib_send:send_to_sid(Status#player.other#player_other.pid_send, DataBin) ,
-			ok 
-	end ;
+%% 		_ ->
+%% 			{ok, DataBin} = pt_12:write(12020, [0]) ,
+%% 			lib_send:send_to_sid(Status#player.other#player_other.pid_send, DataBin) ,
+%% 			ok 
+%% 	end ;
 	
 
 	

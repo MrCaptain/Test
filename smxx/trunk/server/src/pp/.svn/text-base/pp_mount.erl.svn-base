@@ -33,18 +33,36 @@ handle_cmd(44000, Status, _) ->
 %%--------------------------------------
 %%Protocol: 44001 学习技能
 %%--------------------------------------
-handle_cmd(44001, Status, [SkillId]) ->
+handle_cmd(44001, Status, _) ->
     if (Status#player.switch band ?SW_MOUNT_BIT) =:= ?SW_MOUNT_BIT ->
-        case lib_mount:learn_skill(Status, SkillId) of
-            {true, NewStatus} ->
+        case lib_mount:random_skill_exp(Status) of
+            {true, [A, B, C, D]} ->
                 %%刷新战斗属性
-                pack_and_send(Status, 44001, [1]),
+                pack_and_send(Status, 44001, [1, A, B, C, D]);
+            {true, [A, B, C, D], NewStatus} ->
+                %%刷新战斗属性
+                pack_and_send(NewStatus, 44001, [1, A, B, C, D]),
                 {ok, NewStatus};
             {false, Reason} ->
                 pack_and_send(Status, 44001, [Reason])
         end;
     true ->
         pack_and_send(Status, 44001, [0])
+    end;
+
+%%--------------------------------------
+%%Protocol: 44002 确认技能升级(刷新技能经验)
+%%--------------------------------------
+handle_cmd(44002, Status, _) ->
+    if (Status#player.switch band ?SW_MOUNT_BIT) =:= ?SW_MOUNT_BIT ->
+        case lib_mount:update_skill_exp(Status) of
+            {true, SkillList} ->
+                pack_and_send(Status, 44002, [1, SkillList]);
+            {false, Reason} ->
+                pack_and_send(Status, 44002, [Reason])
+        end;
+    true ->
+        pack_and_send(Status, 44002, [0])
     end;
 
 %%--------------------------------------
@@ -85,7 +103,7 @@ handle_cmd(44004, Status, _) ->
 %%Protocol: 44005 下坐骑
 %%--------------------------------------
 handle_cmd(44005, Status, _) ->
-    if Status#player.mount >= 1 ->  %%有座骑并且正使用
+    if Status#player.other#player_other.mount_fashion >= 1 ->  %%有座骑并且正使用
         NewStatus = lib_mount:get_off_mount(Status),
         {ok, NewStatus};
     true ->
@@ -97,10 +115,21 @@ handle_cmd(44005, Status, _) ->
 %------------------------------------------
 handle_cmd(44006, Status, _) ->
      case lib_mount:upgrade_mount_star(Status) of
-        {true, NewStar} ->
-            pack_and_send(Status, 44006, [1, NewStar]);
+        {true, Type, NewStar, NewExp} ->
+            pack_and_send(Status, 44006, [1, Type, NewStar, NewExp]);
         {false, Reason} ->
-            pack_and_send(Status, 44006, [Reason, 0])
+            pack_and_send(Status, 44006, [Reason])
+    end;
+
+%%--------------------------------------
+%%Protocol: 44007 升阶
+%%--------------------------------------
+handle_cmd(44007, Status, _) ->
+     case lib_mount:upgrade_mount_star(Status) of
+        true ->
+            pack_and_send(Status, 44007, [1]);
+        {false, Reason} ->
+            pack_and_send(Status, 44007, [Reason])
     end;
 
 handle_cmd(Cmd, Status, Data) ->

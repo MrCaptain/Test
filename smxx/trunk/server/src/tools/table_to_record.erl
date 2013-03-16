@@ -75,9 +75,12 @@
 		 {temp_meridian,tpl_meridian},
 		 {temp_bones,tpl_bones},
 		 {meridian,meridian},
+		 {bones,bones},
 		 {temp_shop,temp_shop},
 		 {buy_shop_log, buy_shop_log},
-		 {pet, pet}
+		 {pet, pet},
+         {temp_mount_attr, temp_mount_attr},
+         {temp_mount_skill, temp_mount_skill}
     ]).
 
 

@@ -71,7 +71,6 @@
 -define(ETS_MYSTERY_LOG, ets_mystery_log).           %% 神秘商店日志
 -define(ETS_TREA_COST, trea_total_cost).               %% 淘宝积累消费表
 
-
 -define(LOCAL_SHOP_PROC, local_shop_proc).          %% 全局商店进程PID
 -define(GLOBAL_SHOP_B_PROC, global_shop_b_proc).    %% 全局商店进程PID(购买抢购物品)
 

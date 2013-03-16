@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 43
-/svn/smxx/!svn/ver/715/trunk/server/include
+/svn/smxx/!svn/ver/734/trunk/server/include
 END
 rfc4627_jsonrpc.hrl
 K 25
 svn:wc:ra_dav:version-url
 V 61
 /svn/smxx/!svn/ver/4/trunk/server/include/rfc4627_jsonrpc.hrl
+END
+rank.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/720/trunk/server/include/rank.hrl
 END
 rfc4627.hrl
 K 25
@@ -20,6 +26,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 52
 /svn/smxx/!svn/ver/692/trunk/server/include/task.hrl
+END
+mount.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/723/trunk/server/include/mount.hrl
 END
 etime.hrl
 K 25
@@ -39,23 +51,17 @@ svn:wc:ra_dav:version-url
 V 52
 /svn/smxx/!svn/ver/95/trunk/server/include/mysql.hrl
 END
+shop.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/smxx/!svn/ver/721/trunk/server/include/shop.hrl
+END
 goods_record.hrl
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svn/smxx/!svn/ver/262/trunk/server/include/goods_record.hrl
-END
-shop.hrl
-K 25
-svn:wc:ra_dav:version-url
-V 52
-/svn/smxx/!svn/ver/672/trunk/server/include/shop.hrl
-END
-goods.hrl
-K 25
-svn:wc:ra_dav:version-url
-V 53
-/svn/smxx/!svn/ver/709/trunk/server/include/goods.hrl
 END
 battle.hrl
 K 25
@@ -63,17 +69,17 @@ svn:wc:ra_dav:version-url
 V 54
 /svn/smxx/!svn/ver/313/trunk/server/include/battle.hrl
 END
+goods.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/smxx/!svn/ver/709/trunk/server/include/goods.hrl
+END
 record.hrl
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/svn/smxx/!svn/ver/712/trunk/server/include/record.hrl
-END
-http.hrl
-K 25
-svn:wc:ra_dav:version-url
-V 50
-/svn/smxx/!svn/ver/4/trunk/server/include/http.hrl
+/svn/smxx/!svn/ver/724/trunk/server/include/record.hrl
 END
 qlc.hrl
 K 25
@@ -81,11 +87,17 @@ svn:wc:ra_dav:version-url
 V 49
 /svn/smxx/!svn/ver/4/trunk/server/include/qlc.hrl
 END
+http.hrl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/smxx/!svn/ver/4/trunk/server/include/http.hrl
+END
 log.hrl
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/smxx/!svn/ver/677/trunk/server/include/log.hrl
+/svn/smxx/!svn/ver/723/trunk/server/include/log.hrl
 END
 mail.hrl
 K 25
@@ -145,17 +157,17 @@ table_to_record.hrl
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svn/smxx/!svn/ver/715/trunk/server/include/table_to_record.hrl
+/svn/smxx/!svn/ver/729/trunk/server/include/table_to_record.hrl
 END
 meridian.hrl
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/smxx/!svn/ver/675/trunk/server/include/meridian.hrl
+/svn/smxx/!svn/ver/729/trunk/server/include/meridian.hrl
 END
 common.hrl
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/svn/smxx/!svn/ver/709/trunk/server/include/common.hrl
+/svn/smxx/!svn/ver/734/trunk/server/include/common.hrl
 END

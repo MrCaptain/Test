@@ -21,8 +21,6 @@
 
 %% desc: 服务器启动物品信息加载
 init_goods_rule() ->
-    % 初始化物品类型列表  
-    ok = init_goods_type(),
 	% 铸造表数据加载
 %%     ok = init_casting_data(),
 	% 掉落表数据加载
@@ -55,105 +53,6 @@ goods_offline(PS, GoodsId) ->
 %%     lib_common:delete_ets_info(?ETS_CASTING_WASH(PS), GoodsId),
 %%     lib_common:delete_ets_info(?ETS_GOODS_ATTRIBUTE(PS), GoodsId),
     ok.
-
-%% 初始化物品类型列表
-init_goods_type() ->
-%%     case db_agent_goods:select_temp_goods() of
-%%         [] ->
-%%             skip;
-%%         GoodsList ->
-%% 			Fun = fun(Info) ->
-%% 				  if
-%% 					  is_record(Info, temp_goods) ->
-%%                   		  lib_common:insert_ets_info(?ETS_TEMP_GOODS, Info);
-%% 					  true ->
-%% 						  skip
-%% 				  end
-%%           end,
-%%     	lists:foreach(Fun, GoodsList)
-%%     end,
-    ok. 
-
-%% %% 初始化强化附加属性表
-%% init_goos_add_stren() ->
-%% 	F = fun([Id, GoodsId, Stren, AttriId, Value]) ->
-%% 				Info = #ets_stren_add_attri{
-%% 											id = Id, 
-%% 											gtid = GoodsId,
-%% 											stren = Stren,
-%% 							 				attri_id = AttriId,
-%% 											value = Value
-%% 										           },
-%% 				 lib_common:insert_ets_info(?ETS_STREN_ADD_ATTRI, Info)
-%% 		 end,
-%% 	case db:select_all(base_goods_stren_add_attri, "id, gtid, stren, attri_id, value", []) of
-%%         StrenAddList when is_list(StrenAddList) ->  lists:foreach(F, StrenAddList);
-%%         _ ->                                               skip
-%%     end,
-%%     ok.
-%% 
-%% %% 初始化宝石合成规则表
-%% init_goos_compose() ->
-%%      F = fun([Mgtid,Mnew_id,Mcoin]) ->
-%%                 GoodsCompose = #ets_compose_rule{
-%%                                                   gtid = Mgtid,
-%%                                                   new_id = Mnew_id,
-%%                                                   coin = Mcoin
-%%                                                  },
-%%                 lib_common:insert_ets_info(?ETS_COMPOSE_RULE, GoodsCompose)
-%%          end,
-%%     case db:select_all(base_goods_compose, "gtid, new_id, coin", []) of
-%%         ComposeList when is_list(ComposeList) ->  lists:foreach(F, ComposeList);
-%%         _ ->                                            skip
-%%     end,
-%%     ok.
-%% 
-%% %% 初始化宝石镶嵌规则表
-%% init_goos_inlay() ->
-%%      F = fun([Mgtid,Mequip_types]) ->
-%%                 Equip_type = util:explode(",", Mequip_types, int),
-%%                 GoodsInlay = #ets_goods_inlay{
-%%                                     gtid = Mgtid,
-%%                                     equip_subtypes = Equip_type
-%%                               },
-%%                 lib_common:insert_ets_info(?ETS_GOODS_INLAY, GoodsInlay)
-%%          end,
-%%     case db:select_all(base_goods_inlay, "gtid,equip_subtypes", []) of
-%%         GoodsInlayList when is_list(GoodsInlayList) ->   lists:foreach(F, GoodsInlayList);
-%%         _ ->                                                   skip
-%%     end,
-%%     ok.
-%% 
-%% %% desc: 初始化强化基础系数表
-%% init_goos_base_stren_attr() ->
-%%     F = fun([Stren, Degree, Color, Ratio, Hplim, Patt, Matt, Satt, Pdef, Mdef, Sdef, Per, Blo, Hit, Dodge, Cirt]) ->
-%%                 Info = #base_stren_attr{
-%%                             key = {Stren, Color, Degree},   % {stren, color}
-%%                             degree = Degree,
-%%                             ratio = Ratio,   % 当前完美度强化到下一完美度的概率，以1000为基数，理解为：千分之X
-%%                             
-%%                             hplim_ratio = Hplim,
-%%                             
-%%                             patt_ratio = Patt,
-%%                             matt_ratio = Matt,
-%%                             satt_ratio = Satt,
-%%                             pdef_ratio = Pdef,
-%%                             mdef_ratio = Mdef,
-%%                             sdef_ratio = Sdef,
-%%                             
-%%                             block_ratio = Blo,
-%%                             crit_ratio = Cirt,
-%%                             hit_ratio = Hit,
-%%                             dodge_ratio = Dodge,
-%%                             pursuit_ratio = Per
-%%                             },
-%%                 lib_common:insert_ets_info(?BASE_STREN_ATTR, Info)
-%%         end,
-%%     case db:select_all(base_stren_attr, "*", []) of
-%%         GoodsList when is_list(GoodsList) ->   lists:foreach(F, GoodsList);
-%%         _ ->                                       skip
-%%     end,
-%%     ok.
 
 %% 初始化在线玩家背包物品表
 init_goods(PS) ->

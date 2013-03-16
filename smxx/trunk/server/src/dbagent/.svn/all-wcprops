@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 47
-/svn/smxx/!svn/ver/710/trunk/server/src/dbagent
-END
-db_agent_battle.erl
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/smxx/!svn/ver/7/trunk/server/src/dbagent/db_agent_battle.erl
+/svn/smxx/!svn/ver/730/trunk/server/src/dbagent
 END
 db_agent_goods.erl
 K 25
@@ -15,17 +9,23 @@ svn:wc:ra_dav:version-url
 V 66
 /svn/smxx/!svn/ver/673/trunk/server/src/dbagent/db_agent_goods.erl
 END
-db_agent_tool.erl
+db_agent_battle.erl
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svn/smxx/!svn/ver/7/trunk/server/src/dbagent/db_agent_tool.erl
+V 65
+/svn/smxx/!svn/ver/7/trunk/server/src/dbagent/db_agent_battle.erl
 END
 db_agent_relation.erl
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svn/smxx/!svn/ver/325/trunk/server/src/dbagent/db_agent_relation.erl
+END
+db_agent_tool.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/7/trunk/server/src/dbagent/db_agent_tool.erl
 END
 db_agent_skill.erl
 K 25
@@ -39,17 +39,17 @@ svn:wc:ra_dav:version-url
 V 60
 /svn/smxx/!svn/ver/569/trunk/server/src/dbagent/db_agent.erl
 END
-db_log_agent.erl
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/smxx/!svn/ver/102/trunk/server/src/dbagent/db_log_agent.erl
-END
 db_agent_log.erl
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svn/smxx/!svn/ver/662/trunk/server/src/dbagent/db_agent_log.erl
+END
+db_log_agent.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/102/trunk/server/src/dbagent/db_log_agent.erl
 END
 db_agent_mail.erl
 K 25
@@ -57,17 +57,17 @@ svn:wc:ra_dav:version-url
 V 65
 /svn/smxx/!svn/ver/367/trunk/server/src/dbagent/db_agent_mail.erl
 END
-db_agent_meridian.erl
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/smxx/!svn/ver/693/trunk/server/src/dbagent/db_agent_meridian.erl
-END
 db_agent_pet.erl
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svn/smxx/!svn/ver/710/trunk/server/src/dbagent/db_agent_pet.erl
+END
+db_agent_meridian.erl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/smxx/!svn/ver/730/trunk/server/src/dbagent/db_agent_meridian.erl
 END
 db_agent_player.erl
 K 25
@@ -109,7 +109,7 @@ db_agent_mount.erl
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/smxx/!svn/ver/683/trunk/server/src/dbagent/db_agent_mount.erl
+/svn/smxx/!svn/ver/724/trunk/server/src/dbagent/db_agent_mount.erl
 END
 db_agent_task.erl
 K 25

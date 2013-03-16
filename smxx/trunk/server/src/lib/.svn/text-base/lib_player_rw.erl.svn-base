@@ -1,7 +1,7 @@
 %%%------------------------------------------------	
 %%% File    : lib_player_rw.erl	
 %%% Author  : csj	
-%%% Created : 2013-03-13 14:23:07	
+%%% Created : 2013-03-15 16:55:30	
 %%% Description: 从record生成的代码	
 %%% Warning:  由程序自动生成，请不要随意修改！	
 %%%------------------------------------------------		
@@ -30,6 +30,7 @@ get_player_info_fields(Player, List) ->
 				type -> Player#player.type;	
 				icon -> Player#player.icon;	
 				reg_time -> Player#player.reg_time;	
+				logout_time -> Player#player.logout_time;	
 				last_login_time -> Player#player.last_login_time;	
 				last_login_ip -> Player#player.last_login_ip;	
 				status -> Player#player.status;	
@@ -50,7 +51,6 @@ get_player_info_fields(Player, List) ->
 				liveness -> Player#player.liveness;	
 				camp -> Player#player.camp;	
 				lilian -> Player#player.lilian;	
-				mount -> Player#player.mount;	
 				switch -> Player#player.switch;	
 				guild_id -> Player#player.guild_id;	
 				guild_name -> Player#player.guild_name;	
@@ -135,6 +135,7 @@ get_player_info_fields(Player, List) ->
 				wing_strenLv -> Player#player.other#player_other.wing_strenLv;	
 				pet_template_id -> Player#player.other#player_other.pet_template_id;	
 				pet_nick -> Player#player.other#player_other.pet_nick;	
+				mount_fashion -> Player#player.other#player_other.mount_fashion;	
 				team_id -> Player#player.other#player_other.team_id;	
 				team_leader -> Player#player.other#player_other.team_leader;	
 				_ -> undefined	
@@ -176,6 +177,10 @@ set_player_info_fields(Player, [H|T]) ->
 				{reg_time, Val, sub} -> Player#player{reg_time=Player#player.reg_time - Val};	
 				{reg_time, Val, _} -> Player#player{reg_time= Val};	
 				{reg_time, Val} -> Player#player{reg_time= Val};	
+				{logout_time, Val, add} -> Player#player{logout_time=Player#player.logout_time + Val};	
+				{logout_time, Val, sub} -> Player#player{logout_time=Player#player.logout_time - Val};	
+				{logout_time, Val, _} -> Player#player{logout_time= Val};	
+				{logout_time, Val} -> Player#player{logout_time= Val};	
 				{last_login_time, Val, add} -> Player#player{last_login_time=Player#player.last_login_time + Val};	
 				{last_login_time, Val, sub} -> Player#player{last_login_time=Player#player.last_login_time - Val};	
 				{last_login_time, Val, _} -> Player#player{last_login_time= Val};	
@@ -256,10 +261,6 @@ set_player_info_fields(Player, [H|T]) ->
 				{lilian, Val, sub} -> Player#player{lilian=Player#player.lilian - Val};	
 				{lilian, Val, _} -> Player#player{lilian= Val};	
 				{lilian, Val} -> Player#player{lilian= Val};	
-				{mount, Val, add} -> Player#player{mount=Player#player.mount + Val};	
-				{mount, Val, sub} -> Player#player{mount=Player#player.mount - Val};	
-				{mount, Val, _} -> Player#player{mount= Val};	
-				{mount, Val} -> Player#player{mount= Val};	
 				{switch, Val, add} -> Player#player{switch=Player#player.switch + Val};	
 				{switch, Val, sub} -> Player#player{switch=Player#player.switch - Val};	
 				{switch, Val, _} -> Player#player{switch= Val};	
@@ -360,6 +361,10 @@ set_player_info_fields(Player, [H|T]) ->
 				{pet_nick, Val, sub} -> Player#player{other=Player#player.other#player_other{pet_nick = Player#player.other#player_other.pet_nick - Val}};	
 				{pet_nick, Val, _} -> Player#player{other=Player#player.other#player_other{pet_nick =  Val}};	
 				{pet_nick, Val} -> Player#player{other=Player#player.other#player_other{pet_nick =  Val}};	
+				{mount_fashion, Val, add} -> Player#player{other=Player#player.other#player_other{mount_fashion = Player#player.other#player_other.mount_fashion + Val}};	
+				{mount_fashion, Val, sub} -> Player#player{other=Player#player.other#player_other{mount_fashion = Player#player.other#player_other.mount_fashion - Val}};	
+				{mount_fashion, Val, _} -> Player#player{other=Player#player.other#player_other{mount_fashion =  Val}};	
+				{mount_fashion, Val} -> Player#player{other=Player#player.other#player_other{mount_fashion =  Val}};	
 				{team_id, Val, add} -> Player#player{other=Player#player.other#player_other{team_id = Player#player.other#player_other.team_id + Val}};	
 				{team_id, Val, sub} -> Player#player{other=Player#player.other#player_other{team_id = Player#player.other#player_other.team_id - Val}};	
 				{team_id, Val, _} -> Player#player{other=Player#player.other#player_other{team_id =  Val}};	
@@ -630,10 +635,10 @@ get_table_fields(Table_name) ->
 		{infant_ctrl_byuser,[{account_id, 0},{total_time, 0},{last_login_time, 0}]},	
 		{mail,[{id, 0},{type, 0},{state, 0},{timestamp, 0},{sname, []},{uid, 0},{title, []},{content, []},{goods_list, []}]},	
 		{meridian,[{player_id, 0},{mer_detail_1, []},{mer_detail_2, []},{mer_state, []},{cool_down, "{0,0}"}]},	
-		{mount,[{uid, 0},{exp, 0},{level, 0},{star, 0},{fashion, 0},{skill_list, []},{fashion_list, []}]},	
+		{mount,[{uid, 0},{state, 0},{exp, 0},{level, 0},{star, 0},{fashion, 0},{skill_times, 0},{skill_list, []},{fashion_list, []},{old_fashion_list, []}]},	
 		{notice,[{id, 0},{uid, 0},{claz, 0},{type, 0},{cntt, "\"\""},{tmsp, 0},{exp, 0},{eng, 0},{coin, 0},{prstg, 0},{sprt, 0},{soul, 0},{gold, 0},{goods, []},{sts, 1},{rtmsp, 0},{otid, 0}]},	
 		{pet,[{uid, 0},{template_id, 0},{name, "\"\""},{attack, 0},{attr_attack, 0},{attack_type, 1},{hit, 0},{crit, 0},{fighting, 0},{quality_lv, 1},{growth_val, 0},{growth_progress, 0},{aptitude_lv, 0},{aptitude_progress, 0},{status, 0},{skill_hole, 0},{skill_list, []},{create_time, 0}]},	
-		{player,[{id, 0},{account_id, 0},{account_name, []},{nick, []},{type, 1},{icon, 0},{reg_time, 0},{last_login_time, 0},{last_login_ip, []},{status, 0},{gender, 1},{career, 0},{gold, 0},{bgold, 0},{coin, 0},{bcoin, 0},{vip, 0},{vip_expire_time, 0},{scene, 0},{cell_num, 0},{level, 1},{exp, 0},{online_flag, 0},{resolut_x, 0},{resolut_y, 0},{liveness, 0},{camp, 0},{lilian, 0},{mount, 0},{switch, 0},{guild_id, 0},{guild_name, []},{guild_post, 0},{battle_attr, []},{other, 0}]},	
+		{player,[{id, 0},{account_id, 0},{account_name, []},{nick, []},{type, 1},{icon, 0},{reg_time, 0},{logout_time, 0},{last_login_time, 0},{last_login_ip, []},{status, 0},{gender, 1},{career, 0},{gold, 0},{bgold, 0},{coin, 0},{bcoin, 0},{vip, 0},{vip_expire_time, 0},{scene, 0},{cell_num, 0},{level, 1},{exp, 0},{online_flag, 0},{resolut_x, 0},{resolut_y, 0},{liveness, 0},{camp, 0},{lilian, 0},{switch, 0},{guild_id, 0},{guild_name, []},{guild_post, 0},{battle_attr, []},{other, 0}]},	
 		{rela_friend_req,[{id, 0},{uid, 0},{req_uid, 0},{req_nick, []},{req_career, 0},{req_gender, 0},{req_camp, 0},{req_level, 0},{timestamp, 0},{response, 0}]},	
 		{relation,[{uid, 0},{bless_times, 0},{max_friend, 0},{max_foe, 0},{friend_list, []},{foe_list, []},{recent_list, []}]},	
 		{server,[{id, 0},{domain, 1},{ip, []},{port, 0},{node, []},{num, 0},{stop_access, 0},{start_time, 0},{state, 0}]},	
@@ -663,16 +668,18 @@ get_table_fields(Table_name) ->
 		{temp_level_bag,[{level, 0},{cell_num, 0}]},	
 		{temp_meridian,[{mer_id, 0},{mer_type, 0},{mer_lv, 0},{mer_name, []},{mer_detail, []},{next_mer_id, 0},{cd_type, 0},{cost, []}]},	
 		{temp_mon_layout,[{scene_id, 0},{monid, 0},{x, 0},{y, 0},{towards, 0},{revive_time, 0},{state, 0},{pos_x, 0},{pos_y, 0},{attack_skill, 0},{skill_lv, 0},{refresh_time, 0},{last_move_time, 0},{move_time, 0},{move_path, 0},{hate_list, []},{buff_list, []},{begin_sing, 0},{monrcd, "{}"},{battle_attr, "{}"},{target_uid, 0},{id, 0}]},	
+		{temp_mount_attr,[{level, 0},{star, 0},{name, [229,186,167,233,170,145,233,152,182,230,174,181]},{data, []}]},	
+		{temp_mount_skill,[{sid, 0},{level, 0},{name, [230,138,128,232,131,189,229,144,141,229,173,151]},{data, []}]},	
 		{temp_notice,[{noticeid, 0},{noticetext, []},{noticelv, 0},{type, 0}]},	
 		{temp_npc,[{nid, 0},{name, []},{title, []},{icon, 0},{head, 0},{model, 0},{half_length, 0},{npc_type, 0},{level, 0},{fire_range, 0},{warn_range, 0},{hit_point, 0},{magic, 0},{greeting, []},{dialog, []},{func, []},{drop_id, 0},{output_id, 0},{act_skilllist, []},{pas_skilllist, []}]},	
 		{temp_npc_layout,[{scene_id, 0},{npcid, 0},{x, 0},{y, 0},{towards, 0},{npcrcd, "{}"},{id, 0}]},	
 		{temp_npc_shop,[{shop_id, 0},{shop_page, 0},{shop_type, 0},{shop_goods, []}]},	
 		{temp_polish,[{gtid, 0},{polish_value, []}]},	
 		{temp_polish_goods,[{quality, 0},{max_polish, 0},{goods, []},{cost_coin, 0}]},	
-		{temp_scene,[{sid, 0},{name, []},{icon, 0},{mode, 0},{type, 1},{pk_mode, 1},{level_limit, 0},{x, 0},{y, 0},{poem, "0"},{loading, 0},{revive_sid, 0},{revive_x, 0},{revive_y, 0},{npc, []},{scene_num, 0},{id, 0}]},	
+		{temp_scene,[{sid, 0},{name, []},{icon, 0},{mode, 0},{type, 1},{pk_mode, 1},{level_limit, 0},{x, 0},{y, 0},{poem, "0"},{loading, 0},{revive_sid, 0},{revive_x, 0},{revive_y, 0},{size, 10000},{npc, []},{scene_num, 0},{id, 0}]},	
 		{temp_shop,[{shop_tab_page, 0},{gtid, 0},{page, 0},{location, 0},{original_price, 0},{real_price, 0},{gold_type, 1},{level_limit, 0}]},	
-		{temp_skill,[{sid, 0},{name, []},{icon, 0},{type, 0},{stype, 0},{career, 0},{distance, 0},{aoe_dist, 0},{aoe_tnum, 0},{cd_all, 0},{cd_group, []},{sing_time, 0},{sing_break, 0},{description, []},{require_list, []},{learn_level, 0},{use_combopoint, 0}]},	
-		{temp_skill_attr,[{sid, 0},{level, 0},{cost_lilian, 0},{cost_coin, 0},{cost_magic, 0},{cost_anger, 0},{abs_damage, 0},{buff, []}]},	
+		{temp_skill,[{sid, 0},{name, []},{icon, 0},{type, 0},{stype, 0},{career, 0},{distance, 0},{aoe_dist, 0},{aoe_tnum, 0},{cd_all, 0},{cd_group, []},{sing_time, 0},{sing_break, 0},{description, []},{use_combopoint, 0}]},	
+		{temp_skill_attr,[{sid, 0},{level, 0},{require_list, []},{learn_level, 0},{cost_lilian, 0},{cost_coin, 0},{cost_magic, 0},{cost_anger, 0},{abs_damage, 0},{buff, []}]},	
 		{temp_stren,[{stren_lv, 0},{add_percent, 0},{goods, []},{cost_coin, 0},{stren_rate, 0},{stren_succ, []},{stren_fail, []},{add_succ_rate, 0},{add_holes, 0},{desc, []}]},	
 		{temp_suit_reward,[{suit_id, 0},{num, 0},{add_value, []}]},	
 		{temp_system_param,[{id, 0},{name, []},{type, 0},{value, []},{desc, []}]},	
@@ -742,6 +749,8 @@ get_all_tables() ->
 		temp_level_bag,	
 		temp_meridian,	
 		temp_mon_layout,	
+		temp_mount_attr,	
+		temp_mount_skill,	
 		temp_notice,	
 		temp_npc,	
 		temp_npc_layout,	

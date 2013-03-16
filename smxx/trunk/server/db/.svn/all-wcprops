@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 38
-/svn/smxx/!svn/ver/691/trunk/server/db
+/svn/smxx/!svn/ver/728/trunk/server/db
 END
 smxx_base.sql
 K 25
@@ -13,11 +13,11 @@ smxx.sql
 K 25
 svn:wc:ra_dav:version-url
 V 47
-/svn/smxx/!svn/ver/691/trunk/server/db/smxx.sql
+/svn/smxx/!svn/ver/728/trunk/server/db/smxx.sql
 END
 smxx_log.sql
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/smxx/!svn/ver/691/trunk/server/db/smxx_log.sql
+/svn/smxx/!svn/ver/728/trunk/server/db/smxx_log.sql
 END

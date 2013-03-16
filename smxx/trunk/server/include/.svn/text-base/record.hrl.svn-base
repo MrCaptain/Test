@@ -91,6 +91,7 @@
 					   wing_strenLv = 0,		     % 翅膀强化等级
 					   pet_template_id = 0,			 % 宠物模版类型id
 					   pet_nick = "",				 % 宠物昵称
+                       mount_fashion = 0,            % 坐骑外观
                        team_id = 0,                  % 队伍ID, 0为无队伍
                        team_leader = 0               % 是否队长1是,其他不是
                       }).

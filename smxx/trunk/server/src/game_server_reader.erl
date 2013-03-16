@@ -48,14 +48,8 @@ init() ->
 %%Socket：socket id
 %%Client: client记录
 login_parse_packet(Socket, Client) ->
-    %io:format("getin_createpage :::::::: ~p ~n",[Client]),
     Ref = async_recv(Socket, ?HEADER_LENGTH, ?HEART_TIMEOUT),
     receive
-        %%flash安全沙箱
-        {inet_async, Socket, Ref, {ok, ?FL_POLICY_REQ}} ->
-            Len = 23 - ?HEADER_LENGTH,
-            async_recv(Socket, Len, ?TCP_TIMEOUT),
-            lib_send:send_one(Socket, ?FL_POLICY_FILE);
         %%登陆处理
         {inet_async, Socket, Ref, {ok, <<Len:16, Cmd:16>>}} ->
             BodyLen = Len - ?HEADER_LENGTH,
@@ -246,7 +240,7 @@ login_lost(Socket, Client, Location, Reason) ->
         true -> 
             no_log;
         _    ->
-            ?WARNING_MSG("login_lost_/loc: ~p/client:~p/reason: ~p/~n",[Location, Client, Reason])
+            ?WARNING_MSG("login_lost_/location: ~p/client:~p/reason: ~p/~n",[Location, Client, Reason])
     end,       
     timer:sleep(100),
     gen_tcp:close(Socket),
@@ -272,6 +266,8 @@ do_lost(Client, Cmd, Reason, Location) ->
 routing(_Client, Cmd, Binary) ->
     %%取前面二位区分功能类型  
     [H1, H2, _, _, _] = integer_to_list(Cmd),
+    io:format("Routing Login: ~p  PlayerId: ~p, AccId:~p,  Cmd: ~p~n",
+	     [_Client#client.login,  _Client#client.player_id, _Client#client.account_id, Cmd]),
     Module = list_to_atom("pt_"++[H1,H2]),
     Module:read(Cmd, Binary).
 

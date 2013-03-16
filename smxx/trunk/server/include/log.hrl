@@ -1,6 +1,8 @@
 -ifndef(__LOG__).
 -define(__LOG__, log).
 
+-define(LOCAL_LOG_PROC, local_log_proc).            %% 全局日志进程
+
 %%货币流通记录
 %元宝类
 -define(EXPAND_PACK, 1001).  % 扩展背包
@@ -29,7 +31,9 @@
 -define(LOG_AUTO_FINISH_TASK,1040). %消耗元宝自动完成任务
 -define(LOG_BUY_NPC_GOODS, 3001).	%购买NPC商店物品
 -define(LOG_SHOP_BUY, 3002).		%购买商城物品
-
+-define(LOG_MOUNT_SKILL, 44001).    %座骑技能
+-define(LOG_MOUNT_STAR, 44006).    %座骑技能
+-define(LOG_MOUNT_LEVEL, 44007).    %座骑技能
 
 %% 物品消耗类型操作日志
 -define(LOG_USE_GOODS, 1).				%使用物品
@@ -53,5 +57,15 @@
 
 -define(LOG_GOODS_TASK, 1000).     % 任务奖励
 -define(LOG_GOODS_MON, 2000).     % 打怪掉落
+
+-define(DIC_TASKS_LOG, dic_tasks_log). 					%% 任务日志字典
+-define(DIC_COMPOSE_LOG, dic_compose_log). 				%% 合成日志字典
+-define(DIC_STRENGTH_LOG, dic_strength_log). 			%% 强化日志字典
+-define(DIC_ENCHASE_LOG, dic_enchase_log).				%% 镶嵌/摘取日志字典
+-define(DIC_REBUILD_LOG, dic_rebuild_log).				%% 洗练日志字典
+-define(DIC_PK_LOG, dic_pk_log).						%% PK日志字典
+-define(DIC_CONSUME_YUANBAO_LOG, dic_consume_log).		%% 元宝行为日志日志字典
+-define(DIC_TRADE_LOG, dic_trade_log).					%% 交易日志
+-define(DIC_ITEM_LOG, dic_item_log).					%% 物品消耗/产出日志
 
 -endif.

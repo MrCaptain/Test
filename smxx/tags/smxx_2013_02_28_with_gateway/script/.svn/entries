@@ -1,7 +1,7 @@
 10
 
 dir
-717
+734
 https://192.168.44.51:8443/svn/smxx/tags/smxx_2013_02_28_with_gateway/script
 https://192.168.44.51:8443/svn/smxx
 
@@ -230,40 +230,6 @@ czm
 
 149
 
-make_new.bat
-file
-
-
-
-
-2013-03-13T02:49:50.000000Z
-a9a1a15dfe3ef17f05bd76290383302f
-2013-01-19T01:30:44.421875Z
-116
-zhenshufeng
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-29
-
 run_3.bat
 file
 
@@ -297,6 +263,40 @@ czm
 
 
 150
+
+make_new.bat
+file
+
+
+
+
+2013-03-13T02:49:50.000000Z
+a9a1a15dfe3ef17f05bd76290383302f
+2013-01-19T01:30:44.421875Z
+116
+zhenshufeng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+29
 
 run_tree_robot.bat
 file

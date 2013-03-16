@@ -86,8 +86,8 @@ routing(Cmd, Status, Bin) ->
 %%处理socket协议 (cmd：命令号; data：协议数据)
 handle_call({'SOCKET_EVENT', Cmd, Bin}, _From, Status) ->
      case routing(Cmd, Status, Bin) of
-          {ok, Status1} ->                           %% 修改ets和status
-              save_online(Status1),
+          {ok, Status1} ->                           %% 修改ets和status 
+			  save_online(Status1),
               save_online_diff(Status,Status1),
               {reply, ok, Status1};
           {ok, change_ets_table, Status1} ->         %% 修改ets、status和table
@@ -96,7 +96,7 @@ handle_call({'SOCKET_EVENT', Cmd, Bin}, _From, Status) ->
               {reply, ok, Status1};
           {ok, change_status, Status2} ->            %% 修改status
               {reply, ok, Status2};
-          _ ->
+          _ -> 
               {reply, ok, Status}
      end;
 
@@ -255,12 +255,12 @@ handle_cast({remove_goods_buff, BuffId}, Status) ->
 handle_cast({give_present,ItemList},Status)->
 	case lib_task:do_player_get_goods(ItemList,Status) of
 		NewStatus when is_record(NewStatus, player)->
+	    save_online_diff(Status,NewStatus),
 			{noreply, NewStatus};
 		_->
 			?ERROR_MSG("give present to player error good is ~p ~n",[ItemList]),
 			{noreply, Status}
-	end;	
-
+	end;	 
 %%加入了帮派
 handle_cast({join_guild, GuildId, GuildName, Position}, Status) ->
     NewStatus = Status#player{guild_id = GuildId, guild_name = GuildName, guild_post = Position},
@@ -495,11 +495,7 @@ load_for_runtime_data(Player, ResoltX, ResoltY, Socket, LastLoginTime) ->
 					  resolut_x = ResoltX,
 					  resolut_y = ResoltY,
                       battle_attr = BattleAttr,
-                      other = Other},
-
-	%%初始化经脉模块数据
- 	lib_meridian:init_meridian(NewPlayer1),
-	
+                      other = Other}, 
     %%更新ETS_ONLINE在线表
     ets:insert(?ETS_ONLINE, NewPlayer1),
                       
@@ -523,7 +519,13 @@ load_for_runtime_data(Player, ResoltX, ResoltY, Socket, LastLoginTime) ->
     
     %%加载或进入场景
     %%ScnPlayer = lib_scene:init_player_scene(Player),
-    NewPlayer5.
+
+	
+	%%初始化经脉模块数据
+ 	NewPlayer6=lib_meridian:init_meridian(NewPlayer5),
+	
+	?INFO_MSG("NewPlayer6 ~p ~n",[NewPlayer6]),
+    NewPlayer6.
     
     
 %% 加载玩家成就系统
@@ -549,13 +551,12 @@ load_player_info(PlayerId, ResoltX, ResoltY, Socket) ->
     put(donttalk, [StopBeginTime, StopSeconds]), 
 	%% 初始化商店信息
 	lib_shop:init_shop_info(PlayerId),
+	
     Player.
 
 test() ->
 	Fun = fun(P) ->
-				  io:format("====player: ~p~n", [[P#player.battle_attr#battle_attr.x,
-												  P#player.battle_attr#battle_attr.y,
-												  P#player.id,
+				  io:format("====player: ~p~n", [[P#player.id,
 												  P#player.scene,
 												  P#player.battle_attr#battle_attr.hit_point,
 												  P#player.battle_attr#battle_attr.hit_point_max]]) 
@@ -730,7 +731,6 @@ save_player_table(Status, _Cmd) ->
                     online_flag,                         %% 在线标记，0不在线 1在线	
                     liveness,                            %% 活跃度	
                     lilian,                              %% 历练值
-                    mount,                               %% 座骑外观
                     switch,                              %% 状态开关码1:功能开 0:功能关，位定义参考common.hrl	
                     battle_attr                          %% 战斗属性
                 ],
@@ -741,7 +741,6 @@ save_player_table(Status, _Cmd) ->
                     Status#player.online_flag,           %% 在线标记，0不在线 1在线	
                     Status#player.liveness,              %% 活跃度	
                     Status#player.lilian,                %% 历练值	
-                    Status#player.mount,                 %% 座骑外观
                     Status#player.switch,                %% 状态开关码1:
                     BattleAttrStr                        %% 战斗属性存数据库部分
                 ],

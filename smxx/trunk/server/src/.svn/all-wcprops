@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 39
-/svn/smxx/!svn/ver/717/trunk/server/src
+/svn/smxx/!svn/ver/734/trunk/server/src
 END
-game_tcp_acceptor.erl
+game_server.erl
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/svn/smxx/!svn/ver/7/trunk/server/src/game_tcp_acceptor.erl
+V 55
+/svn/smxx/!svn/ver/734/trunk/server/src/game_server.erl
 END
 game_server_app.erl
 K 25
@@ -15,23 +15,23 @@ svn:wc:ra_dav:version-url
 V 59
 /svn/smxx/!svn/ver/550/trunk/server/src/game_server_app.erl
 END
-game_server.erl
+game_tcp_acceptor.erl
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/smxx/!svn/ver/713/trunk/server/src/game_server.erl
-END
-game_tcp_client_sup.erl
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svn/smxx/!svn/ver/7/trunk/server/src/game_tcp_client_sup.erl
+V 59
+/svn/smxx/!svn/ver/7/trunk/server/src/game_tcp_acceptor.erl
 END
 u.erl
 K 25
 svn:wc:ra_dav:version-url
 V 45
 /svn/smxx/!svn/ver/561/trunk/server/src/u.erl
+END
+game_tcp_client_sup.erl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/smxx/!svn/ver/7/trunk/server/src/game_tcp_client_sup.erl
 END
 game_tcp_listener_sup.erl
 K 25
@@ -45,23 +45,17 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/smxx/!svn/ver/38/trunk/server/src/game_gateway_server.erl
 END
-game_server_reader.erl
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/svn/smxx/!svn/ver/592/trunk/server/src/game_server_reader.erl
-END
 game_gateway_sup.erl
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/smxx/!svn/ver/550/trunk/server/src/game_gateway_sup.erl
+/svn/smxx/!svn/ver/734/trunk/server/src/game_gateway_sup.erl
 END
-game_tcp_listener.erl
+game_server_reader.erl
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/svn/smxx/!svn/ver/7/trunk/server/src/game_tcp_listener.erl
+V 62
+/svn/smxx/!svn/ver/734/trunk/server/src/game_server_reader.erl
 END
 main.erl
 K 25
@@ -69,11 +63,11 @@ svn:wc:ra_dav:version-url
 V 48
 /svn/smxx/!svn/ver/634/trunk/server/src/main.erl
 END
-game_tcp_acceptor_sup.erl
+game_tcp_listener.erl
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svn/smxx/!svn/ver/7/trunk/server/src/game_tcp_acceptor_sup.erl
+V 59
+/svn/smxx/!svn/ver/7/trunk/server/src/game_tcp_listener.erl
 END
 game_server_sup.erl
 K 25
@@ -81,15 +75,21 @@ svn:wc:ra_dav:version-url
 V 57
 /svn/smxx/!svn/ver/7/trunk/server/src/game_server_sup.erl
 END
-game_gateway_app.erl
+game_tcp_acceptor_sup.erl
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/svn/smxx/!svn/ver/550/trunk/server/src/game_gateway_app.erl
+V 63
+/svn/smxx/!svn/ver/7/trunk/server/src/game_tcp_acceptor_sup.erl
 END
 game_gateway.erl
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/smxx/!svn/ver/550/trunk/server/src/game_gateway.erl
+/svn/smxx/!svn/ver/734/trunk/server/src/game_gateway.erl
+END
+game_gateway_app.erl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/smxx/!svn/ver/550/trunk/server/src/game_gateway_app.erl
 END

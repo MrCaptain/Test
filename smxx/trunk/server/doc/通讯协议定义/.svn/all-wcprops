@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 34
-/svn/smxx_doc/!svn/ver/62/protocol
+/svn/smxx_doc/!svn/ver/67/protocol
 END
-60网关信息.txt
+44座骑.txt
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svn/smxx_doc/!svn/ver/55/protocol/60%E7%BD%91%E5%85%B3%E4%BF%A1%E6%81%AF.txt
+V 59
+/svn/smxx_doc/!svn/ver/65/protocol/44%E5%BA%A7%E9%AA%91.txt
 END
 15物品信息.txt
 K 25
@@ -15,11 +15,11 @@ svn:wc:ra_dav:version-url
 V 77
 /svn/smxx_doc/!svn/ver/61/protocol/15%E7%89%A9%E5%93%81%E4%BF%A1%E6%81%AF.txt
 END
-44座骑.txt
+60网关信息.txt
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/svn/smxx_doc/!svn/ver/57/protocol/44%E5%BA%A7%E9%AA%91.txt
+V 77
+/svn/smxx_doc/!svn/ver/55/protocol/60%E7%BD%91%E5%85%B3%E4%BF%A1%E6%81%AF.txt
 END
 25宠物.txt
 K 25
@@ -27,29 +27,29 @@ svn:wc:ra_dav:version-url
 V 59
 /svn/smxx_doc/!svn/ver/60/protocol/25%E5%AE%A0%E7%89%A9.txt
 END
+21技能信息.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/smxx_doc/!svn/ver/67/protocol/21%E6%8A%80%E8%83%BD%E4%BF%A1%E6%81%AF.txt
+END
 20战斗信息.txt
 K 25
 svn:wc:ra_dav:version-url
 V 77
 /svn/smxx_doc/!svn/ver/49/protocol/20%E6%88%98%E6%96%97%E4%BF%A1%E6%81%AF.txt
 END
-21技能信息.txt
+29防沉迷信息.txt
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svn/smxx_doc/!svn/ver/8/protocol/21%E6%8A%80%E8%83%BD%E4%BF%A1%E6%81%AF.txt
+V 85
+/svn/smxx_doc/!svn/ver/8/protocol/29%E9%98%B2%E6%B2%89%E8%BF%B7%E4%BF%A1%E6%81%AF.txt
 END
 14关系.txt
 K 25
 svn:wc:ra_dav:version-url
 V 58
 /svn/smxx_doc/!svn/ver/8/protocol/14%E5%85%B3%E7%B3%BB.txt
-END
-29防沉迷信息.txt
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/svn/smxx_doc/!svn/ver/8/protocol/29%E9%98%B2%E6%B2%89%E8%BF%B7%E4%BF%A1%E6%81%AF.txt
 END
 架构说明.txt
 K 25
@@ -85,7 +85,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/smxx_doc/!svn/ver/61/protocol/12%E5%9C%BA%E6%99%AF%E4%BF%A1%E6%81%AF.txt
+/svn/smxx_doc/!svn/ver/66/protocol/12%E5%9C%BA%E6%99%AF%E4%BF%A1%E6%81%AF.txt
 END
 30任务信息.txt
 K 25
@@ -103,7 +103,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/smxx_doc/!svn/ver/38/protocol/10%E5%B8%90%E6%88%B7%E4%BF%A1%E6%81%AF.txt
+/svn/smxx_doc/!svn/ver/66/protocol/10%E5%B8%90%E6%88%B7%E4%BF%A1%E6%81%AF.txt
 END
 35组队.txt
 K 25

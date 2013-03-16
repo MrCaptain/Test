@@ -64,15 +64,15 @@ get_upgrade_cost(SkillId, SkillLv) ->
 	ok .
 
 %%获取学习技能所需要玩家等级
-get_learn_level(SkillId) ->
-    Skill = tpl_skill:get(SkillId),
-    Skill#temp_skill.learn_level.
+get_learn_level(SkillId, Lv) ->
+    Skill = tpl_skill_attr:get(SkillId, Lv),
+    Skill#temp_skill_attr.learn_level.
 
 %%获取学习技能所需要学习的技能列表
 %%返回格式为[{SkillId1, Level1},...]
-get_require_skill_list(SkillId) ->
-    Skill = tpl_skill:get(SkillId),
-    Skill#temp_skill.require_list.
+get_require_skill_list(SkillId, Lv) ->
+    Skill = tpl_skill_attr:get(SkillId, Lv),
+    Skill#temp_skill_attr.require_list.
 
 %%返回技能有吟唱时间
 get_sing(SkillId) ->

@@ -1,7 +1,7 @@
 10
 
 dir
-717
+734
 https://192.168.44.51:8443/svn/smxx/tags/smxx_2013_01_17_before_replace_dblib/server/db
 https://192.168.44.51:8443/svn/smxx
 
@@ -60,9 +60,6 @@ water
 
 1770
 
-not_used
-dir
-
 temp_scene.sql
 file
 
@@ -96,6 +93,9 @@ water
 
 
 5742
+
+not_used
+dir
 
 temp_npc_refresh.sql
 file
@@ -403,14 +403,14 @@ water
 
 1979
 
-server.sql
+temp_notice.sql
 file
 
 
 
 
 2013-03-13T02:49:40.000000Z
-be3dfcf1424716e2a526f24ebf7b44bd
+98b12b5a35dc03210bd9e369a31b8b7e
 2013-01-15T07:10:33.687500Z
 49
 water
@@ -435,7 +435,7 @@ water
 
 
 
-1130
+818
 
 temp_item_holy_gem.sql
 file
@@ -471,14 +471,14 @@ water
 
 1346
 
-temp_notice.sql
+server.sql
 file
 
 
 
 
 2013-03-13T02:49:40.000000Z
-98b12b5a35dc03210bd9e369a31b8b7e
+be3dfcf1424716e2a526f24ebf7b44bd
 2013-01-15T07:10:33.687500Z
 49
 water
@@ -503,7 +503,7 @@ water
 
 
 
-818
+1130
 
 system_config.sql
 file

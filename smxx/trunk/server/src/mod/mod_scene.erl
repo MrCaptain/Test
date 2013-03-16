@@ -29,13 +29,16 @@
 %% External functions
 %% ====================================================================
 start({SceneId, SceneProcessName, Worker_id}) ->
-    gen_server:start({local,SceneProcessName}, ?MODULE,{SceneId, SceneProcessName, Worker_id}, []).
+	%%gen_server:start(SceneProcessName, ?MODULE,{SceneId, SceneProcessName, Worker_id}, []).
+     gen_server:start({local,SceneProcessName}, ?MODULE,{SceneId, SceneProcessName, Worker_id}, []).
 
 start_link(SceneId,SceneProcessName) ->
-	gen_server:start_link({local, ?MODULE}, ?MODULE, {SceneId, SceneProcessName, 0}, []) .
+	%%gen_server:start_link(?MODULE, ?MODULE, {SceneId, SceneProcessName, 0}, []) .
+ 	gen_server:start_link({local, ?MODULE}, ?MODULE, {SceneId, SceneProcessName, 0}, []) .
 
 start_link({SceneId, SceneProcessName, Worker_id}) ->
-    gen_server:start_link({local,SceneProcessName}, ?MODULE, {SceneId, SceneProcessName, Worker_id}, []).
+	%%gen_server:start_link(SceneProcessName, ?MODULE, {SceneId, SceneProcessName, Worker_id}, []).
+     gen_server:start_link({local,SceneProcessName}, ?MODULE, {SceneId, SceneProcessName, Worker_id}, []).
 
 %% --------------------------------------------------------------------
 %% Function: init/1
@@ -48,7 +51,7 @@ start_link({SceneId, SceneProcessName, Worker_id}) ->
 %% --------------------------------------------------------------------
 init({SceneId, SceneProcessName, Worker_id}) ->
 	process_flag(trap_exit, true),
-	catch misc:unregister({local,SceneProcessName}) , 
+	catch misc:unregister({local, SceneProcessName}) ,
 	Ret = misc:register(local, SceneProcessName, self()), 
 	if
 		Ret == true ->
@@ -112,7 +115,7 @@ handle_call({apply_call, Module, Method, Args}, _From, State) ->
 %% 	?DEBUG("mod_scene_apply_call: [~p/~p/~p]", [Module, Method, Args]),	
 	Reply  = 
 	case (catch apply(Module, Method, Args)) of
-		 {'EXIT', Info} ->	
+		 {'EXIT', _Info} ->	
 %% 			 io:format("mod_scene_apply_call error: Module=~p, Method=~p, Reason=~p",[Module, Method,Info]),
 			 error;
 		 DataRet -> DataRet
@@ -143,7 +146,7 @@ handle_cast({start_player_attack,[AerId, DerId, DerType, SkillId]}, State) ->
 handle_cast({apply_cast, Module, Method, Args}, State) ->
 %% 	?DEBUG("mod_scene_apply_cast: [~p/~p/~p]", [Module, Method, Args]),	
 	case (catch apply(Module, Method, Args)) of
-		 {'EXIT', Info} ->	
+		 {'EXIT', _Info} ->	
 %% 			 io:format("mod_scene_apply_cast error: Module=~p, Method=~p, Args =~p, Reason=~p",[Module, Method, Args, Info]),
 			 error;
 		 _ -> ok
@@ -514,15 +517,18 @@ start_player_attack(ScenePid, AerId, DerId, DerType, SkillId) ->
 
 %% @spec 玩家进入场景
 enter_scene(SceneId,Status,X,Y) ->
+	io:format("====0===mod_scene:~p~n", [[X,Y]]) ,
 	try  
 		PidScene = get_scene_pid(SceneId) ,
+		io:format("====1===mod_scene:~p~n", [PidScene]) ,
 		PlayerOther = Status#player.other#player_other{pid_scene = PidScene} ,
 		BattleAttr = Status#player.battle_attr#battle_attr{x=X, y=Y} ,
 		NewPlayer = Status#player{scene = SceneId,other = PlayerOther,battle_attr = BattleAttr} ,
+		io:format("====2===mod_scene:~p~n", [PidScene]) ,
 		gen_server:cast(PidScene, {apply_cast, lib_scene, enter_scene, [NewPlayer]}) ,
 		{ok,NewPlayer}
 	catch
-		_:_ -> []
+		T:EE -> io:format("====0===mod_scene:~p~n", [[T,EE]]) 
 	end.
 
 %% @spec 用户退出场景

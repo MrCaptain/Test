@@ -33,14 +33,6 @@ init([Ip, Port]) ->
                     10000,
                     supervisor,
                     [mod_disperse]
-%%                 },
-%%                 {
-%%                     mod_police,
-%%                     {mod_police, start_link, []},
-%%                     permanent,
-%%                     10000,
-%%                     supervisor,
-%%                     [mod_police]
                 }
             ]
         }

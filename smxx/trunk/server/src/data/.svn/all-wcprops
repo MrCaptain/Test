@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/svn/smxx/!svn/ver/714/trunk/server/src/data
+/svn/smxx/!svn/ver/730/trunk/server/src/data
 END
 data_boss.erl
 K 25
@@ -19,7 +19,7 @@ data_skill.erl
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/smxx/!svn/ver/497/trunk/server/src/data/data_skill.erl
+/svn/smxx/!svn/ver/727/trunk/server/src/data/data_skill.erl
 END
 tpl_polish_goods.erl
 K 25
@@ -32,6 +32,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 58
 /svn/smxx/!svn/ver/708/trunk/server/src/data/tpl_stren.erl
+END
+tpl_mount_attr.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/724/trunk/server/src/data/tpl_mount_attr.erl
 END
 tpl_polish.erl
 K 25
@@ -51,6 +57,12 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/smxx/!svn/ver/575/trunk/server/src/data/tpl_god_tried.erl
 END
+tpl_mount_skill.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/724/trunk/server/src/data/tpl_mount_skill.erl
+END
 tpl_all_gem_reward.erl
 K 25
 svn:wc:ra_dav:version-url
@@ -67,7 +79,7 @@ tpl_bones.erl
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svn/smxx/!svn/ver/670/trunk/server/src/data/tpl_bones.erl
+/svn/smxx/!svn/ver/730/trunk/server/src/data/tpl_bones.erl
 END
 data_words.erl
 K 25
@@ -97,19 +109,19 @@ data_config.erl
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/smxx/!svn/ver/708/trunk/server/src/data/data_config.erl
-END
-data_scene_mon.erl
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svn/smxx/!svn/ver/708/trunk/server/src/data/data_scene_mon.erl
+/svn/smxx/!svn/ver/724/trunk/server/src/data/data_config.erl
 END
 tpl_level_bag.erl
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svn/smxx/!svn/ver/575/trunk/server/src/data/tpl_level_bag.erl
+END
+data_scene_mon.erl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/smxx/!svn/ver/708/trunk/server/src/data/data_scene_mon.erl
 END
 data_battle.erl
 K 25
@@ -123,29 +135,29 @@ svn:wc:ra_dav:version-url
 V 61
 /svn/smxx/!svn/ver/574/trunk/server/src/data/tpl_item_gem.erl
 END
-tpl_upgrade.erl
-K 25
-svn:wc:ra_dav:version-url
-V 60
-/svn/smxx/!svn/ver/574/trunk/server/src/data/tpl_upgrade.erl
-END
 tpl_all_stren_reward.erl
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svn/smxx/!svn/ver/512/trunk/server/src/data/tpl_all_stren_reward.erl
 END
-tpl_suit_reward.erl
+tpl_upgrade.erl
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svn/smxx/!svn/ver/550/trunk/server/src/data/tpl_suit_reward.erl
+V 60
+/svn/smxx/!svn/ver/574/trunk/server/src/data/tpl_upgrade.erl
 END
 tpl_meridian.erl
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/svn/smxx/!svn/ver/646/trunk/server/src/data/tpl_meridian.erl
+/svn/smxx/!svn/ver/730/trunk/server/src/data/tpl_meridian.erl
+END
+tpl_suit_reward.erl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/smxx/!svn/ver/550/trunk/server/src/data/tpl_suit_reward.erl
 END
 tpl_scene.erl
 K 25
@@ -159,11 +171,11 @@ svn:wc:ra_dav:version-url
 V 61
 /svn/smxx/!svn/ver/575/trunk/server/src/data/tpl_gold_bag.erl
 END
-tpl_task.erl
+tpl_item_suit.erl
 K 25
 svn:wc:ra_dav:version-url
-V 57
-/svn/smxx/!svn/ver/673/trunk/server/src/data/tpl_task.erl
+V 62
+/svn/smxx/!svn/ver/575/trunk/server/src/data/tpl_item_suit.erl
 END
 data_meridian.erl
 K 25
@@ -171,11 +183,11 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/smxx/!svn/ver/676/trunk/server/src/data/data_meridian.erl
 END
-tpl_item_suit.erl
+tpl_task.erl
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/svn/smxx/!svn/ver/575/trunk/server/src/data/tpl_item_suit.erl
+V 57
+/svn/smxx/!svn/ver/673/trunk/server/src/data/tpl_task.erl
 END
 data_antirevel.erl
 K 25
@@ -241,7 +253,7 @@ tpl_skill_attr.erl
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svn/smxx/!svn/ver/615/trunk/server/src/data/tpl_skill_attr.erl
+/svn/smxx/!svn/ver/727/trunk/server/src/data/tpl_skill_attr.erl
 END
 tpl_goods.erl
 K 25
@@ -283,5 +295,5 @@ tpl_skill.erl
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svn/smxx/!svn/ver/620/trunk/server/src/data/tpl_skill.erl
+/svn/smxx/!svn/ver/727/trunk/server/src/data/tpl_skill.erl
 END

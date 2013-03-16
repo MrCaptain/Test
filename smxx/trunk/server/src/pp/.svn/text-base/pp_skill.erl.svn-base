@@ -27,35 +27,45 @@ handle_cmd(21000, Status, _) ->
 %%Protocol: 21001 学习技能
 %%--------------------------------------
 handle_cmd(21001, Status, [SkillId])->
-    case lib_skill:check_skill_id(SkillId) of 
-        true ->
-            case lib_skill:learn_skill(Status, SkillId) of
-                {false, Reason} ->
-                    pack_and_send(Status, 21001, [Reason]);
-                {true, NewStatus} ->
-                    pack_and_send(Status, 21001, [1]),
-                    %扣钱, 刷新属性
-                    %NewStatus = lib_player:send_player_attribute2(Status, 5);
-                    {ok, NewStatus}
-            end;
+    case Status#player.switch band ?SW_SKILL_BIT =:= ?SW_SKILL_BIT of
+         true ->
+             case lib_skill:check_skill_id(SkillId) of 
+                 true ->
+                     case lib_skill:learn_skill(Status, SkillId) of
+                         {false, Reason} ->
+                             pack_and_send(Status, 21001, [Reason]);
+                         {true, NewStatus} ->
+                             pack_and_send(Status, 21001, [1]),
+                             %扣钱, 刷新属性
+                             %NewStatus = lib_player:send_player_attribute2(Status, 5);
+                             {ok, NewStatus}
+                     end;
+                 false ->
+                     pack_and_send(Status, 21001, [0])  %%无效的技能ID
+             end;
         false ->
-            pack_and_send(Status, 21001, [0])  %%无效的技能ID
+             pack_and_send(Status, 21001, [0])  %%无效的技能ID
     end;
 
 %%--------------------------------------
 %%Protocol: 21002 升级技能
 %%--------------------------------------
 handle_cmd(21002, Status, [SkillId])->
-    case lib_skill:check_skill_id(SkillId) of
+    case Status#player.switch band ?SW_SKILL_BIT =:= ?SW_SKILL_BIT of
         true ->
-            case lib_skill:upgrade_skill(Status, SkillId) of
-               {false, Reason} ->
-                    pack_and_send(Status, 21002, [Reason]);
-               {true, NewStatus} ->
-                    pack_and_send(Status, 21002, [1]),
-                    %扣钱, 刷新属性
-                    %NewStatus = lib_player:send_player_attribute2(Status, 5);
-                    {ok, NewStatus}
+            case lib_skill:check_skill_id(SkillId) of
+                true ->
+                    case lib_skill:upgrade_skill(Status, SkillId) of
+                       {false, Reason} ->
+                            pack_and_send(Status, 21002, [Reason]);
+                       {true, NewStatus} ->
+                            pack_and_send(Status, 21002, [1]),
+                            %扣钱, 刷新属性
+                            %NewStatus = lib_player:send_player_attribute2(Status, 5);
+                            {ok, NewStatus}
+                    end;
+                false ->
+                    pack_and_send(Status, 21002, [0])  %%无效的技能ID
             end;
         false ->
             pack_and_send(Status, 21002, [0])  %%无效的技能ID

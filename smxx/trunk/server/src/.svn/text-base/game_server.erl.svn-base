@@ -24,13 +24,14 @@ start([Ip, Port, ServerId, Gateways]) ->
     ok = start_mail(),                          %%开启邮件监控树
     ok = start_tcp(Port),                       %%开启tcp listener监控树
     ok = start_scene(),                         %%开启本节点场景(按照配置文件)        
-    ok = start_scene(),                         %%开启本节点场景(按照配置文件)        
     ok = start_scene_agent(),                   %%开启场景代理监控树
     %%     ok = start_mon(),                    %%开启怪物监控树
     
     ok = start_goods(),
-    %%ok = start_shop(),
+    ok = start_shop(),
     %%ok = start_market(),
+	%% 开启排行榜监控树
+	ok = start_rank(),
     ok = start_disperse([Ip, Port, ServerId, Gateways]),    %%开启服务器路由，连接其他节点    
     timer:sleep(1000),
     
@@ -43,7 +44,7 @@ start([Ip, Port, ServerId, Gateways]) ->
     ok = start_team(),
 
     ?INFO_MSG("~s The game server start ok!~n", [misc:time_format(now())]),
-    ok.    
+    ok. 
 
 %%开启核心服务
 start_kernel() ->
@@ -106,26 +107,12 @@ start_mail() ->
                 permanent, 10000, supervisor, [mod_mail]}),
     ok.
 
-%% %%开启843监控树
-%% start_police() ->
-%%     {ok,_} = supervisor:start_child(
-%%                game_server_sup,
-%%                {mod_police,
-%%                 {mod_police, start_link,[]},
-%%                 permanent, 10000, supervisor, [mod_police]}),
-%%     ok.
-
 start_notice() ->
     {ok,_} = supervisor:start_child(
                game_server_sup,
                {mod_notice,
                 {mod_notice, start_link,[]},
                 permanent, 10000, supervisor, [start_notice]}),
-    ok.
-
-%%开启排行榜监控树
-start_rank() ->
-    _Pid = mod_rank:get_mod_rank_pid(),
     ok.
 
 %%开启杂项监控树
@@ -215,10 +202,13 @@ start_statistics() ->
     io:format("===========mod statistics process is started........~n"),
     ok.
 
-start_week_rank() ->
-    %% 周排行榜  主进程
-    %%     _Pid = mod_week_rank:get_main_mod_week_rank_pid(),
-    %%      io:format("===========mod week_rank is started:~p........~n",[Pid]),
+%% 开启排行榜监控树
+start_rank() ->
+    {ok,_} = supervisor:start_child(
+               game_server_sup,
+               {mod_rank,
+                {mod_rank, start_link,[]},
+                permanent, 10000, supervisor, [mod_rank]}),
     ok.
 
 %% desc: 物品ets表管理

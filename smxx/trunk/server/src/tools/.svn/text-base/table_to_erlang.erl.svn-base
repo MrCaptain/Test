@@ -53,9 +53,11 @@
 		 {temp_god_tried,temp_god_tried,tpl_god_tried,[1]},
 		 {temp_compose,temp_compose,tpl_compose,[1]},
 		 {temp_npc_shop, temp_npc_shop, tpl_npc_shop, [1, 2]},
-		 {temp_meridian,tpl_meridian,tpl_meridian,[2,3]},
+		 {temp_meridian,tpl_meridian,tpl_meridian,[2,3,4]},
 		 {temp_bones,tpl_bones,tpl_bones,[1]},
-		 {temp_shop, temp_shop, tpl_shop, [1, 2]}
+		 {temp_shop, temp_shop, tpl_shop, [1, 2]},
+         {temp_mount_attr, temp_mount_attr, tpl_mount_attr, [1,2]},
+         {temp_mount_skill, temp_mount_skill, tpl_mount_skill, [1,2]}
     ]).
 
 %%用于生成返回值为列表的函数

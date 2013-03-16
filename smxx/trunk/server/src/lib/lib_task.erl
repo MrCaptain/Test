@@ -13,7 +13,7 @@
 -include("log.hrl"). 
 
 %--------------------------------
-%        服务器初始化
+%        服务器初始化(现在暂不用)
 %--------------------------------  
 
 %%初始化任务任務模板
@@ -71,7 +71,7 @@ init_trigger_task(PlayerId)->
 					 	  ets:insert(?ETS_TASK_PROCESS, TaskInfo)
 				  end, Result).
 
-%%插入触发任务到进程字典
+%%插入触发主线,支线任务到进程字典
 insert_pid(Type,State,TaskId)when Type =:= ?MAIN_TASK orelse Type =:=?BRANCHE_TASK -> 
 	case get({role_task_list,State}) of 
 		undefined-> 
@@ -79,6 +79,7 @@ insert_pid(Type,State,TaskId)when Type =:= ?MAIN_TASK orelse Type =:=?BRANCHE_TA
 			?ERROR_MSG("pid_dict not exit ~n",[]);
 		Result->
 			put({role_task_list,State},Result++[TaskId])end;
+%%插入触发日常任务到进程字典
 insert_pid(_,State,TaskId) -> 
 	case get({daily_task_list,State}) of 
 		undefined-> 
@@ -94,11 +95,11 @@ init_daily_task_finish(PlayerId)->
 	AllTaskType = ?ALL_TASK_TYPE,
 	AllLen = length(AllTaskType),
 	case length(Result) of
-		0->
+		0->%%玩家初次登陆游戏,为玩家初始化所有日常任务数据
 			check_daily_task_fin(PlayerId) ;
-		AllLen ->
+		AllLen ->%%玩家之前已经登陆过游戏,直接加载玩家数据
 			do_upd_daily_fin_login(Result);
-		_ ->
+		_ ->%%玩家有部分日常任务数据丢失,重新初始化丢失部分,直接加载已有部分
 			do_upd_daily_fin_login(Result),
 			check_daily_task_fin(PlayerId)
 	end.
@@ -118,7 +119,7 @@ insert_daily_fin_in_ets(Task)->
 	TaskInfo = prase_original_daily_data(Task), 
 	ets:insert(?ETS_TASK_DAILY_FINISH, TaskInfo).
 
-%%用户登录时更新日常任务完成数据
+%%用户登录时更新日常任务完成数据,尝试重置玩家日常任务
 do_upd_daily_fin_login(Result)->
 	lists:foreach(fun(Task)->
 						  D = list_to_tuple([daily_task_finish|Task]), 
@@ -217,14 +218,6 @@ get_task_min_lv(PS)->
 	   true ->
 		   0
 	end.    
- 
-%%是否可以接受任务
-can_trigger(TaskId, PS,TaskType)-> 
-	case tpl_task:get(TaskId) of
-		%%没有这个任务，不能接
-		[] ->false;
-		TD ->check_trigger_condition(TD, PS,TaskType)
-	end.
 
 %%判断任务触发条件
 check_trigger_condition(TD, PS,TaskType) when is_record(TD, tpl_task)->
@@ -269,22 +262,22 @@ get_daily_fin_state(TriggerDetail)->
 		   ?CAN_TRIGGER
 	end.
 	   
-%%更新日常任务完成表的trigger_detail字段 {每次可同时触发任务数，已触发任务数}
+%%更新日常任务完成表的trigger_detail(每次可触发任务数)字段,字段格式为{每次可同时触发任务数，已触发任务数}
 check_daily_task_can_tri(TaskFin,Result)->
 	{CanTri,FinTri,NowTri} = TaskFin#daily_task_finish.trigger_detail,
-	if CanTri-1 > FinTri ->
+	if CanTri-1 > FinTri ->%%当已接任务数少于上限时,直接返回结果
 		  [get_daily_fin_state(TaskFin#daily_task_finish.trigger_detail),
 		   {CanTri,FinTri+1,NowTri+1}]++Result;
-	    CanTri-1 == FinTri ->
+	    CanTri-1 == FinTri ->%%否则改变该字段状态并且更新玩家cycle_datil字段
 			check_daily_task_can_cyc(TaskFin,[{CanTri,0,NowTri+1}]++Result)
 	end.
 %%更新日常任务完成表的cycle_datil字段 每轮可用次数{可触发次数，已触发次数}
 check_daily_task_can_cyc(TaskFin,Result)->
 	{CanCyc,NowCyc} = TaskFin#daily_task_finish.cycle_datil,
-	if CanCyc-1 > NowCyc ->
+	if CanCyc-1 > NowCyc ->%%当已接任务次数少于上限时,直接返回结果
 		  [get_daily_fin_state(TaskFin#daily_task_finish.trigger_detail),
 		   {CanCyc,NowCyc+1}]++Result;
-	    CanCyc-1 == NowCyc ->
+	    CanCyc-1 == NowCyc ->%%否则改变该字段状态并且更新玩家count_detail字段
 			check_daily_task_can_count(TaskFin,[{CanCyc,0}]++Result)
 	end.
 %%更新日常任务完成表的 count_detail字段 本日可用次数{可用次数，已用次数}	
@@ -292,9 +285,9 @@ check_daily_task_can_count(TaskFin,Result)->
 	{CanCount,Count} = TaskFin#daily_task_finish.count_detail,
 	NewCount  = Count+1,
 	case CanCount of
-		NewCount ->
+		NewCount ->%%当玩家已接任务轮数超过上限时,锁住玩家日常任务数据，不允许玩家再接同类日常任务
 			[?CAN_NOT_TRIGGER,{CanCount,NewCount}]++Result;
-		_-> 
+		_-> %%否则,直接更新状态
 			[get_daily_fin_state(TaskFin#daily_task_finish.trigger_detail),
 			 {CanCount,NewCount}]++Result
 	end.
@@ -438,9 +431,10 @@ check_career(TaskPro,PlayerPro)->
 		PlayerPro ->true;
 		_-> false end.
 
-%% 是否已触发过/或是否满足同时最多触发任务个数 
+%% 判断主线/支线任务是否已触发过
 check_if_in_trigger(TaskId, Rid,Type)when Type=:=?MAIN_TASK orelse Type=:=?BRANCHE_TASK->
 	 ets:lookup(?ETS_TASK_PROCESS, {Rid, TaskId}) =/= [];
+%%判断日常任务是否已触发过或是否满足同时最多触发任务个数 
 check_if_in_trigger(TaskId, Rid,Type)-> 
 	  case ets:lookup(?ETS_TASK_DAILY_FINISH, {Rid,Type}) of
 		 [Data]->
@@ -554,7 +548,7 @@ upd_task_process(Type,Ps,ObjInfo) ->
 	case length(ResList) of
 		0-> skip;
 		_-> 
-			F = fun(Task,Sum)-> 
+			F = fun(Task,Sum)-> %%匹配任务进度数据结构
 					 	[_Type,Rest] = case Task#task_process.mark of
 										   [Arg1,Arg2]->[Arg1,Arg2];
 										   [Arg1]->[Arg1,-1];
@@ -769,7 +763,7 @@ upd_task_in_pid(TaskId,_)->
 	put({daily_task_list,1},Finish++[TaskId]).
 
 %-----------------------------
-%     玩家完成任务 
+%         玩家完成任务 
 %----------------------------- 
 
 %%在ets表中检测该任务状态
@@ -1192,7 +1186,7 @@ get_npc_data_from_query(List,NpcId)->
 get_all_task()->
 	get({role_task_list,0})++get({role_task_list,1})++get({daily_task_list,0})++get({daily_task_list,1}).
 
-%%发送所有完成/未完成任务到客户端
+%%获取玩家所有完成/未完成任务到客户端
 get_all_task_2_client(PS,Size)->
 	List = get_all_task(), 
     F=fun(_,{List,Result})-> 
@@ -1344,8 +1338,7 @@ do_coin_auto_success(PS,TaskId)->
 %------------------------------------ 
 
 %%判断玩家采集的物品是否与指定任务有关
-check_collect_task(TaskId,ItemId,PlayerId)-> 
-	?INFO_MSG("~p ~n",[{TaskId,ItemId,PlayerId}]),
+check_collect_task(TaskId,ItemId,PlayerId)->  
   case get_one_task_process(TaskId,PlayerId) of
 	  null ->
 		  ?WARNING_MSG("no task process~n",[]),
@@ -1353,8 +1346,7 @@ check_collect_task(TaskId,ItemId,PlayerId)->
 	  Task -> 
 		  case Task#task_process.mark of
 			  [?COLLECT_EVENT,{ItemId,_,_}]->true;
-			  _-> 
-				  	?INFO_MSG("collect no t right ~p ~n",[Task#task_process.mark]),
+			  _->  
 				  false
 		  end
   end.

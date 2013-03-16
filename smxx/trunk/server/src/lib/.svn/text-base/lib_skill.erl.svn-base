@@ -5,9 +5,11 @@
 %%% @Description: 技能库函数
 %%%-----------------------------------
 -module(lib_skill).
+
 -include("common.hrl").
 -include("record.hrl").
 -include("debug.hrl").
+
 -export([role_login/1, 
          learn_skill/2,
          upgrade_skill/2,
@@ -33,15 +35,19 @@ add_skill_attr_to_player(Status) ->
     %%被动技能加成
     NewBattleAttr = BattleAttr#battle_attr{},
     Status#player{battle_attr = NewBattleAttr}.
+
+%%开启技能模块
+open_skill(Status) ->
+    Status#player{switch = Status#player.switch bor ?SW_SKILL_BIT}.
     
 %%学习技能 玩家进程调用
 %%学习时后立刻回写数据库
 learn_skill(Status, SkillId) ->
-    case check_skill_learnable(Status, SkillId) of
+    case check_skill_learnable(Status, SkillId, 1) of
         true ->
             Skill = get_all_skill(Status#player.id, Status#player.career),
-            RequireSkillList = data_skill:get_require_skill_list(SkillId),
-            case check_skill_requirment(Skill#skill.cur_skill_list, RequireSkillList) of
+            RequireSkillList = data_skill:get_require_skill_list(SkillId, 1),
+            case check_skill_requirement(Skill#skill.cur_skill_list, RequireSkillList) of
                 true ->
                     case lists:keyfind(SkillId, 1, Skill#skill.cur_skill_list) of
                         {SkillId, _Lv} ->
@@ -69,15 +75,20 @@ upgrade_skill(Status, SkillId) ->
         false ->
             {false, 5};   %技能未学习
         {SkillId, Lv} ->
-            case check_skill_lv(SkillId, Lv+1) of
+            case check_skill_lv(SkillId, Lv+1) of %%技能新等级是否有效
                 true ->
-                    %{CoinCost, EmpCost} = get_upgrade_cost(SkillId, Lv + 1),
-                    NewSkillList = lists:keyreplace(SkillId, 1, Skill#skill.cur_skill_list, {SkillId, Lv+1}),
-                    NewSkill = Skill#skill{skill_list = NewSkillList, cur_skill_list = NewSkillList},
-                    put(player_skill, NewSkill),
-                    write_back_skill(),
-                    NewPlayerOther = Status#player.other#player_other{skill_list = Skill#skill.cur_skill_list},
-                    {true, Status#player{other = NewPlayerOther}};        %返回成功
+                    case check_skill_upgrade(Status, Skill#skill.cur_skill_list, {SkillId, Lv+1}) of
+                        true ->
+                            %{CoinCost, EmpCost} = get_upgrade_cost(SkillId, Lv + 1),
+                            NewSkillList = lists:keyreplace(SkillId, 1, Skill#skill.cur_skill_list, {SkillId, Lv+1}),
+                            NewSkill = Skill#skill{skill_list = NewSkillList, cur_skill_list = NewSkillList},
+                            put(player_skill, NewSkill),
+                            write_back_skill(),
+                            NewPlayerOther = Status#player.other#player_other{skill_list = Skill#skill.cur_skill_list},
+                            {true, Status#player{other = NewPlayerOther}};        %返回成功
+                        false ->
+                            {false, 3}  %%人物等级不足或技能等级不足
+                    end;
                 false ->
                     {false, 0} %%无效参数
             end
@@ -459,23 +470,32 @@ check_skill_lv(SkillId, SkillLv) ->
 
 %%检查技能是否可学, 检查技能类型, 职业限制, 等级要求
 %%可以学习返回 true, 否则返回 false
-check_skill_learnable(Status, SkillId) ->
+check_skill_learnable(Status, SkillId, Lv) ->
     TempSkill = tpl_skill:get(SkillId),
+    TempSkillAttr = tpl_skill:get(SkillId, Lv),
     is_record(TempSkill, temp_skill) andalso 
+    is_record(TempSkillAttr, temp_skill_attr) andalso
     (TempSkill#temp_skill.type =/= 0) andalso  %%可以学习的技能技能(普通默认技能不用学习)
     (TempSkill#temp_skill.stype =:= 1) andalso %%玩家技能
     ((TempSkill#temp_skill.career =:= 0) orelse (Status#player.career =:= TempSkill#temp_skill.career)) andalso
-    (Status#player.level >= TempSkill#temp_skill.learn_level).
+    (Status#player.level >= TempSkillAttr#temp_skill_attr.learn_level).
+
+%%检查技能是否可以升级
+check_skill_upgrade(Status, CurSkillList, {SkillId, Lv}) ->
+   TempSkillAttr = tpl_skill:get(SkillId, Lv),
+   is_record(TempSkillAttr, temp_skill_attr) andalso
+   (Status#player.level >= TempSkillAttr#temp_skill_attr.learn_level) andalso
+   check_skill_requirement(CurSkillList, TempSkillAttr#temp_skill_attr.require_list).
 
 %%学习技能时检查: 检查当前技能列表是否满足要求的技能列表
 %%满足时返回true, 否则false
-check_skill_requirment(_CurSkillList, []) ->
+check_skill_requirement(_CurSkillList, []) ->
     true;
-check_skill_requirment(CurSkillList, [{SkillId, SkillLv}|T]) ->
+check_skill_requirement(CurSkillList, [{SkillId, SkillLv}|T]) ->
     case lists:keyfind(SkillId, 1,  CurSkillList) of
         {SkillId, Lv} ->
             if Lv >= SkillLv ->
-                check_skill_requirment(CurSkillList, T); %%满足,比较下一个技能要求
+                check_skill_requirement(CurSkillList, T); %%满足,比较下一个技能要求
             true ->
                 false   %%等级不满足
             end;

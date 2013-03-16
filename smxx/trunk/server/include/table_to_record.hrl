@@ -1,7 +1,7 @@
 %%%------------------------------------------------	
 %%% File    : table_to_record.erl	
-%%% Author  : smxx	
-%%% Created : 2013-03-14 19:34:48	
+%%% Author  : smxx	 
+%%% Created : 2013-03-15 16:55:20	 
 %%% Description: 从mysql表生成的record	
 %%% Warning:  由程序自动生成，请不要随意修改！	
 %%%------------------------------------------------		
@@ -21,14 +21,14 @@
       state = 0                               %% 1-新开；2-火爆；3-良好；4-流畅；5-维护。	
     }).	
 	
-%% 服务器列表	
+%% server_config	
 %% server_config ==> server_config 	
 -record(server_config, {	
       id = 0,                                 %% 编号Id	
       name = ""                               %% 服务器名字	
     }).	
 	
-%% 服务器列表	
+%% server_player	
 %% server_player ==> server_player 	
 -record(server_player, {	
       uid = 0,                                %% 玩家ID，全平台唯一	
@@ -54,6 +54,7 @@
       type = 1,                               %% 玩家身份 1- 普通玩家 2 - 指导员 3 - gm	
       icon = 0,                               %% 玩家头像ID	
       reg_time = 0,                           %% 注册时间	
+      logout_time = 0,                        %% 上次离线时间	
       last_login_time = 0,                    %% 最后登陆时间	
       last_login_ip = "",                     %% 最后登陆IP	
       status = 0,                             %% 玩家状态（0正常、1禁止、2战斗中、3死亡、4挂机、5打坐）	
@@ -75,7 +76,6 @@
       liveness = 0,                           %% 活跃度	
       camp = 0,                               %% 阵营(国籍)	
       lilian = 0,                             %% 历练值	
-      mount = 0,                              %% 座骑外观0表示不使用，其他外观ID	
       switch = 0,                             %% 状态开关码1:功能开 0:功能关，位定义参考common.hrl	
       guild_id = 0,                           %% 派帮ID(无帮派:0)	
       guild_name = "",                        %% 帮派名称	
@@ -115,7 +115,7 @@
       goods_cd = 0                            %% 物品使用cd	
     }).	
 	
-%% 物品属性表	
+%% goods_attribute	
 %% goods_attribute ==> goods_attribute 	
 -record(goods_attribute, {	
       id,                                     %% 编号	
@@ -243,7 +243,7 @@
       attri_add = <<"{}">>                    %% 属性加成	
     }).	
 	
-%% 套装物品表	
+%% temp_item_suit	
 %% temp_item_suit ==> temp_item_suit 	
 -record(temp_item_suit, {	
       suit_id = 0,                            %% 套装编号	
@@ -253,7 +253,7 @@
       effect_list = []                        %% 套装效果列表[{hit_ponit_maxnumbner},],	
     }).	
 	
-%% 怪物刷新	
+%% temp_mon_layout	
 %% temp_mon_layout ==> temp_mon_layout 	
 -record(temp_mon_layout, {	
       scene_id = 0,                           %% 场景ID	
@@ -366,8 +366,6 @@
       sing_time = 0,                          %% 吟唱时间(毫秒)	
       sing_break = 0,                         %% 吟唱状态可否中断(1可，0木)	
       description = "",                       %% 技能描述	
-      require_list = [],                      %% 学习技能需要技能列表[{SkilId Level},...],	
-      learn_level = 0,                        %% 学习技能需要玩家等级	
       use_combopoint = 0                      %% 是否消耗连击点(0为不消耗 1为消耗),	
     }).	
 	
@@ -393,6 +391,8 @@
 -record(temp_skill_attr, {	
       sid = 0,                                %% 技能ID	
       level = 0,                              %% 等级	
+      require_list = [],                      %% 学习技能需要技能列表[{SkilId Level},...],	
+      learn_level = 0,                        %% 学习技能需要玩家等级	
       cost_lilian = 0,                        %% 升级需要历练值	
       cost_coin = 0,                          %% 升级需要铜钱值	
       cost_magic = 0,                         %% 技能需要消耗法力值	
@@ -405,12 +405,15 @@
 %% mount ==> mount 	
 -record(mount, {	
       uid = 0,                                %% 玩家ID	
+      state = 0,                              %% 状态1:骑 2休息	
       exp = 0,                                %% 经验值	
-      level = 0,                              %% 等级	
-      star = 0,                               %% 星星	
+      level = 0,                              %% 等级(阶)	
+      star = 0,                               %% 星级(最大10星)	
       fashion = 0,                            %% 当前幻化	
-      skill_list = [],                        %% 技能列表[{SkillId Lv},...],	
-      fashion_list = []                       %% 幻化列表	
+      skill_times = 0,                        %% 技能升级次数	
+      skill_list = [],                        %% 技能列表[{SkillId Lv, Exp},...],	
+      fashion_list = [],                      %% 幻化列表[{Fid Expired},...], Fid幻化ID, Expire过期时间,	
+      old_fashion_list = []                   %% 过期幻化列表	
     }).	
 	
 %% 关系列表	
@@ -425,14 +428,14 @@
       recent_list = []                        %% 最近联系人列表格式 [{Uid Time, Name, Career, Gender}, ...], Time 最近一次发生关系时间(秒),	
     }).	
 	
-%% 配置掉落实例	
+%% temp_drop_main	
 %% temp_drop_main ==> temp_drop_main 	
 -record(temp_drop_main, {	
       did,                                    %% 	
       dropitem = []                           %% 随机掉落实例ID	
     }).	
 	
-%% 掉落实例明细	
+%% temp_drop_sub	
 %% temp_drop_sub ==> temp_drop_sub 	
 -record(temp_drop_sub, {	
       sid,                                    %% 	
@@ -520,7 +523,7 @@
       trigger_time                            %% 触发时间	
     }).	
 	
-%% 强化模版表	
+%% temp_stren	
 %% temp_stren ==> temp_stren 	
 -record(temp_stren, {	
       stren_lv,                               %% 强化等级	
@@ -544,14 +547,14 @@
       cost_coin                               %% 消耗铜钱数量	
     }).	
 	
-%% 洗练模版表	
+%% temp_polish	
 %% temp_polish ==> temp_polish 	
 -record(temp_polish, {	
       gtid,                                   %% 装备ID	
       polish_value = []                       %% 洗炼属性列表	
     }).	
 	
-%% 装备升级模版	
+%% temp_upgrade	
 %% temp_upgrade ==> temp_upgrade 	
 -record(temp_upgrade, {	
       gtid,                                   %% 当前物品id	
@@ -560,14 +563,14 @@
       target_gtid                             %% 目标物品id	
     }).	
 	
-%% 全身强化加成表	
+%% temp_all_stren_reward	
 %% temp_all_stren_reward ==> temp_all_stren_reward 	
 -record(temp_all_stren_reward, {	
       stren_lv,                               %% 强化等级	
       stren_reward                            %% 强化属性加成	
     }).	
 	
-%% 洗炼属性表	
+%% casting_polish	
 %% casting_polish ==> casting_polish 	
 -record(casting_polish, {	
       gid = 0,                                %% 装备ID	
@@ -576,7 +579,7 @@
       new_attri = []                          %% 新洗炼属性	
     }).	
 	
-%% 洗练消耗模版表	
+%% temp_polish_goods	
 %% temp_polish_goods ==> temp_polish_goods 	
 -record(temp_polish_goods, {	
       quality,                                %% 品质，决定了物品名称颜色1:白色，2：绿色，3：蓝色，4：紫色，5：橙色	
@@ -585,7 +588,7 @@
       cost_coin = 0                           %% 消耗铜钱	
     }).	
 	
-%% 套装装备加成	
+%% temp_suit_reward	
 %% temp_suit_reward ==> temp_suit_reward 	
 -record(temp_suit_reward, {	
       suit_id,                                %% 套装id	
@@ -593,14 +596,14 @@
       add_value = []                          %% 属性加成	
     }).	
 	
-%% 全身宝石镶嵌加成	
+%% temp_all_gem_reward	
 %% temp_all_gem_reward ==> temp_all_gem_reward 	
 -record(temp_all_gem_reward, {	
       gem_num,                                %% 全身宝石个数	
       add_value = []                          %% 属性加成	
     }).	
 	
-%% 镀金配置表	
+%% temp_gilding	
 %% temp_gilding ==> temp_gilding 	
 -record(temp_gilding, {	
       gilding_lv,                             %% 镀金等级	
@@ -610,28 +613,28 @@
       cost_coin = 0                           %% 消耗铜钱	
     }).	
 	
-%% 元宝开启格子数	
+%% temp_gold_bag	
 %% temp_gold_bag ==> temp_gold_bag 	
 -record(temp_gold_bag, {	
       cell_num = 0,                           %% 	
       gold_num = 0                            %% 	
     }).	
 	
-%% 等级开放格子数	
+%% temp_level_bag	
 %% temp_level_bag ==> temp_level_bag 	
 -record(temp_level_bag, {	
       level = 0,                              %% 	
       cell_num                                %% 	
     }).	
 	
-%% vip背包模版表	
+%% temp_vip_bag	
 %% temp_vip_bag ==> temp_vip_bag 	
 -record(temp_vip_bag, {	
       vip_gtid = 0,                           %% 	
       cell_num                                %% 	
     }).	
 	
-%% 神炼模版表	
+%% temp_god_tried	
 %% temp_god_tried ==> temp_god_tried 	
 -record(temp_god_tried, {	
       target_tid = 0,                         %% 神炼宝石	
@@ -640,7 +643,7 @@
       cost_coin                               %% 消耗铜钱	
     }).	
 	
-%% 帮派	
+%% guild	
 %% guild ==> guild 	
 -record(guild, {	
       id,                                     %% 帮派编号	
@@ -664,7 +667,7 @@
       accuse_num = 0                          %% 劾弹次数	
     }).	
 	
-%% 帮派成员	
+%% guild_member	
 %% guild_member ==> guild_member 	
 -record(guild_member, {	
       uid = 0,                                %% 角色ID	
@@ -689,7 +692,7 @@
       sklist = []                             %% 技能列表[{Id Level}],	
     }).	
 	
-%% 帮派申请	
+%% guild_apply	
 %% guild_apply ==> guild_apply 	
 -record(guild_apply, {	
       uid = 0,                                %% 角色ID	
@@ -702,7 +705,7 @@
       timestamp = 0                           %% 申请时间	
     }).	
 	
-%% 购买npc商店日志	
+%% buy_npc_shop_log	
 %% buy_npc_shop_log ==> buy_npc_shop_log 	
 -record(buy_npc_shop_log, {	
       uid,                                    %% 	
@@ -712,7 +715,7 @@
       buy_time                                %% 	
     }).	
 	
-%% 商店模板表	
+%% temp_npc_shop	
 %% temp_npc_shop ==> temp_npc_shop 	
 -record(temp_npc_shop, {	
       shop_id,                                %% 商店编号	
@@ -734,33 +737,45 @@
 %% temp_meridian ==> tpl_meridian 	
 -record(tpl_meridian, {	
       mer_id,                                 %% 经脉id	
-      mer_type = 0,                           %% 经脉类型	
+      mer_type = 0,                           %% 经脉类型(1-督脉，2-任脉，3-冲脉，4-带脉，5-阴维，6-阳维，7-阴跷，8-阳跷)	
       mer_lv,                                 %% 经脉等级(1~100)	
+      cd_type,                                %% 是否有cd(1有 2无)	
       mer_name,                               %% 经脉名称	
       mer_detail,                             %% 经脉详细[{职业类别属性类型,属性值}...],	
       next_mer_id,                            %% 下一级经脉(-1为无下一级)	
-      cd_type,                                %% 是否有cd(1有 2无)	
-      cost                                    %% 升级花费[{ItemId  ItemNum}...],	
+      cd = 0,                                 %% 冷却时间	
+      cost_money,                             %% 升级需要的金钱花费	
+      cost_Empowerment                        %% 升级需要的历练消费	
     }).	
 	
 %% temp_bones	
 %% temp_bones ==> tpl_bones 	
 -record(tpl_bones, {	
       lv,                                     %% 筋骨等级	
-      bones_val                               %% 筋骨值	
+      bones_val,                              %% 筋骨值(万分比)	
+      probability = 0,                        %% 成功概率	
+      extend_pro = 0                          %% 反馈成功概率(根骨提升失败后增加成功概率)	
     }).	
 	
 %% meridian	
 %% meridian ==> meridian 	
 -record(meridian, {	
       player_id,                              %% 玩家Id	
-      mer_detail_1,                           %% 玩家经脉1详细数据[{MerTypeMerlv,BonesLv}...],	
-      mer_detail_2,                           %% 玩家经脉2详细数据[{MerTypeMerlv,BonesLv}...],	
+      mer_detail_1,                           %% 玩家经脉1详细数据[{MerTypeMerlv}...],	
+      mer_detail_2,                           %% 玩家经脉2详细数据[{MerTypeMerlv}...],	
       mer_state,                              %% 玩家修炼经脉阶段{state1 state2},	
       cool_down = <<"{0,0}">>                 %% 剩余的冷却时间 {玩家退出时间戳剩余冷却时间},	
     }).	
 	
-%% 商城配置表	
+	
+%% bones	
+%% bones ==> bones 	
+-record(bones, {	
+      uid,                                    %% 玩家id	
+      bones_info = []                         %% 根骨状况[{根骨等级成功率}...],	
+    }).	
+	
+%% temp_shop	
 %% temp_shop ==> temp_shop 	
 -record(temp_shop, {	
       shop_tab_page,                          %% 	
@@ -773,7 +788,7 @@
       level_limit                             %% 开放等级限制	
     }).	
 	
-%% 购买商城物品日志	
+%% buy_shop_log	
 %% buy_shop_log ==> buy_shop_log 	
 -record(buy_shop_log, {	
       uid,                                    %% 	
@@ -783,7 +798,7 @@
       buy_time                                %% 	
     }).	
 	
-%% 宠物表	
+%% pet	
 %% pet ==> pet 	
 -record(pet, {	
       uid,                                    %% 	
@@ -804,4 +819,22 @@
       skill_hole = 0,                         %% 开启技能槽总数	
       skill_list = [],                        %% 技能ID列表[{Seq SkillId, Level}],	
       create_time = 0                         %% 创建时间	
+    }).	
+	
+%% temp_mount_attr	
+%% temp_mount_attr ==> temp_mount_attr 	
+-record(temp_mount_attr, {	
+      level = 0,                              %% 座骑阶级	
+      star = 0,                               %% 星级	
+      name = <<"座骑阶段">>,              %% 阶级名	
+      data = []                               %% 属性列表[{Key Value},...],	
+    }).	
+	
+%% temp_mount_skill	
+%% temp_mount_skill ==> temp_mount_skill 	
+-record(temp_mount_skill, {	
+      sid = 0,                                %% 技能ID	
+      level = 0,                              %% 技能等级	
+      name = <<"技能名字">>,              %% 阶级名	
+      data = []                               %% 属性列表[{Key Value},...],	
     }).	

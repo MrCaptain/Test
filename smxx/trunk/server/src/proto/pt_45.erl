@@ -1,7 +1,7 @@
 %%--------------------------------------
 %% @Module: pt_45
 %% Author: Auto Generated
-%% Created: Fri Mar 08 11:35:57 2013
+%% Created: Thu Mar 14 10:50:06 2013
 %% Description: 
 %%--------------------------------------
 -module(pt_45).
@@ -31,10 +31,10 @@ read(45002,<<MerType:8>>) ->
     {ok, [MerType]};
 
 %%--------------------------------------
-%%Protocol: 45003 提升经脉
+%%Protocol: 45003 提升筋骨
 %%--------------------------------------
-read(45003,<<MerType:8,MerId:8>>) ->
-    {ok, [MerType, MerId]};
+read(45003,<<MerType:8,IfProtect:8>>) ->
+    {ok, [MerType, IfProtect]};
 
 %%--------------------------------------
 %%Protocol: 45004 2小时候候完成经脉提升(经脉1)
@@ -52,13 +52,13 @@ read(_Cmd, _R) ->
 %%Protocol: 45001 获取玩家经脉信息
 %%--------------------------------------
 write(45001,[Mer1List,Mer2List]) ->
-    Fun_Mer1List = fun({MerType,MerLv,BonesLv}) ->
+    Fun_Mer1List = fun([MerType,MerLv,BonesLv]) ->
         <<MerType:8,MerLv:8,BonesLv:8>>
     end,
     Mer1List_Len = length(Mer1List),
     Mer1List_ABin = any_to_binary(lists:map(Fun_Mer1List,Mer1List)),
     Mer1List_ABinData = <<Mer1List_Len:16, Mer1List_ABin/binary>>,
-    Fun_Mer2List = fun({MerType,MerLv,BonesLv}) ->
+    Fun_Mer2List = fun([MerType,MerLv,BonesLv]) ->
         <<MerType:8,MerLv:8,BonesLv:8>>
     end,
     Mer2List_Len = length(Mer2List),
@@ -76,7 +76,6 @@ write(45002,[Result]) ->
 %%Protocol: 45003 提升筋骨
 %%--------------------------------------
 write(45003,[Result]) ->
-	?INFO_MSG("result is ~p ,~n",[Result]),
     {ok, pt:pack(45003, <<Result:8>>)};
 
 %%--------------------------------------

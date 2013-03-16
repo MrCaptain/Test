@@ -35,7 +35,6 @@
 %% 每个场景的工作进程数
 -define(SCENE_WORKER_NUMBER, 10).
 
-
 %% 每个场景的最多容纳人数
 -define(SCENE_PLAYER_MAX_NUMBER, 20).
 %% 最大分场景数
@@ -47,11 +46,6 @@
 %%安全校验
 -define(TICKET, "SDFSDESF123DFSDF"). 
 
-%%flash843安全沙箱
--define(FL_POLICY_REQ, <<"<polic">>).
-%% -define(FL_POLICY_REQ, <<60,112,111,108,105,99,121,45,102,105,108,101,45,114,101,113,117,101,115,116,47,62,0>>).
-%% -define(FL_POLICY_FILE, <<"<cross-domain-policy><allow-access-from domain='*' to-ports='*' /></cross-domain-policy>">>).
--define(FL_POLICY_FILE, "<cross-domain-policy><site-control permitted-cross-domain-policies=\"master-only\"/><allow-access-from domain=\"*\" to-ports=\"*\"/></cross-domain-policy>\0\0").
 %%tcp_server监听参数
 -define(TCP_OPTIONS, [binary, {packet, 0}, {active, false}, {reuseaddr, true}, {nodelay, false}, {delay_send, true}, {send_timeout, 5000}, {keepalive, true}, {exit_on_close, true}]).
 -define(RECV_TIMEOUT, 5000).
@@ -86,7 +80,6 @@
     logger:error_msg(?MODULE,?LINE,Format, Args)).
 -define(CRITICAL_MSG(Format, Args),
     logger:critical_msg(?MODULE,?LINE,Format, Args)).
-
 
 %% 新手村场景ID
 -define(INIT_SCENE_ID, 101).      %%新手村
@@ -130,8 +123,8 @@
 -define(SW_MOUNT_BIT,    16#00000002).  %座骑
 -define(SW_GUILD_BIT,    16#00000004).  %帮派
 -define(SW_RELATION_BIT, 16#00000008).  %关系
+-define(SW_SKILL_BIT,    16#00000010).  %技能
 
--define(SW_BIT4, 16#00000010).
 -define(SW_BIT5, 16#00000020).
 -define(SW_BIT6, 16#00000040).
 -define(SW_BIT7, 16#00000080).
@@ -165,7 +158,6 @@
 -define(SW_BIT29, 16#20000000).
 -define(SW_BIT30, 16#40000000).
 -define(SW_BIT31, 16#80000000).
-
 
 %% 联盟进程的工作进程数
 -define(MON_LIMIT_NUM, 100000000).                                %% 怪物数量限制数

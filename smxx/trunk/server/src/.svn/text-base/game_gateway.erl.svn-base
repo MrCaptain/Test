@@ -71,11 +71,6 @@ code_change(_OldVsn, Status, _Extra)->
 %%发送要连接的IP和port到客户端，并关闭连接
 handoff(Socket) ->
     case gen_tcp:recv(Socket, ?HEADER_LENGTH) of
-        {ok, ?FL_POLICY_REQ} ->			
-            Len = 23 - ?HEADER_LENGTH,
-            gen_tcp:recv(Socket, Len, 1000),
-            gen_tcp:send(Socket, ?FL_POLICY_FILE),
-            gen_tcp:close(Socket);
         {ok, <<Len:16, 60000:16>>} ->
             ?TRACE("~s get_msg_60000 ~n",[misc:time_format(now())]),
 			%%延时允许客户端连接
